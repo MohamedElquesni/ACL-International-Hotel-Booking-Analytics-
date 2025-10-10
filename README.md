@@ -12,7 +12,7 @@ Project/
 │
 ├── Milestone 1/                           # Milestone 1: Prediction & Explainability
 │   ├── notebooks/
-│   │   └── milestone1_analysis.ipynb      # Main analysis notebook
+│   │   └── milestone1.ipynb               # Main analysis notebook
 │   ├── data/                              # Cleaned and processed datasets
 │   ├── models/                            # Saved trained models
 │   ├── reports/                           # Analysis reports and visualizations
@@ -33,30 +33,33 @@ Project/
 └── README.md                              # This file
 ```
 
-## Milestone 1 Objectives
+## Milestone 1 Progress
 
-### 1. Data Cleaning
-- Remove unnecessary columns
-- Handle null values and duplicates
+### Objectives
 
-### 2. Data Engineering Questions (with visualizations)
-- Q1: Which city is best for each traveler type? (Solo, Business, Family, Couple)
-- Q2: What are the top 3 countries with the best value-for-money score per traveler's age group?
+- [x] **1. Data Cleaning**
+  - [x] Remove unnecessary columns
+  - [x] Handle null values and duplicates
 
-### 3. Predictive Modeling
-- Build a multi-class classification model (statistical ML or shallow FFNN)
-- Predict: `country_group` (11 groups)
-- Input Features: Score-based, User demographics, Quality features
-- Evaluate with: Accuracy, Precision, Recall, F1-score
+- [ ] **2. Data Engineering Questions (with visualizations)**
+  - [ ] Q1: Which city is best for each traveler type? (Solo, Business, Family, Couple)
+  - [ ] Q2: What are the top 3 countries with the best value-for-money score per traveler's age group?
 
-### 4. Model Explainability
-- Apply SHAP and LIME to interpret predictions
-- Show which features most influence the model
+- [ ] **3. Predictive Modeling**
+  - [ ] Build a multi-class classification model (statistical ML or shallow FFNN)
+  - [ ] Predict: `country_group` (11 groups)
+  - [ ] Input Features: Score-based, User demographics, Quality features
+  - [ ] Evaluate with: Accuracy, Precision, Recall, F1-score
 
-## Deliverables
-1. Jupyter Notebook with complete workflow
-2. Cleaned dataset with `country_group` column
-3. Report answering the 2 questions with visualizations
-4. Trained model
-5. XAI outputs (SHAP/LIME plots)
-6. Inference function
+- [ ] **4. Model Explainability**
+  - [ ] Apply SHAP and LIME to interpret predictions
+  - [ ] Show which features most influence the model
+
+### Deliverables
+
+- [ ] Jupyter Notebook with complete workflow
+- [ ] Cleaned dataset with `country_group` column
+- [ ] Report answering the 2 questions with visualizations
+- [ ] Trained model
+- [ ] XAI outputs (SHAP/LIME plots)
+- [ ] Inference function
