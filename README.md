@@ -4,37 +4,33 @@
 
 ```
 Project/
-├── Dataset [Original]/          # Original dataset files
+├── Dataset [Original]/                    # Original dataset files (shared across milestones)
 │   ├── booking_db.sqlite
 │   ├── hotels.csv
 │   ├── reviews.csv
 │   └── users.csv
-├── data/                        # Cleaned and processed datasets
-├── models/                      # Saved trained models
-├── reports/                     # Analysis reports and visualizations
-├── notebooks/                   # Jupyter notebooks
-│   └── milestone1_analysis.ipynb
-└── Previous Labs For Reference/ # Reference materials
-```
-
-## Notebook Structure Guidelines
-
-### Each Major Objective Must Be:
-1. **Clearly boxed** with markdown headers and visual separation
-2. **Hierarchically organized** with subboxes for sub-tasks
-3. **Self-contained** with all relevant code, outputs, and explanations
-
-### Standard Section Format:
-```
-# 📦 [Objective Number]: [Objective Title]
-## Description
-[Brief description of the objective]
-
-### 📋 Sub-objective 1: [Title]
-[Content]
-
-### 📋 Sub-objective 2: [Title]
-[Content]
+│
+├── Milestone 1/                           # Milestone 1: Prediction & Explainability
+│   ├── notebooks/
+│   │   └── milestone1_analysis.ipynb      # Main analysis notebook
+│   ├── data/                              # Cleaned and processed datasets
+│   ├── models/                            # Saved trained models
+│   ├── reports/                           # Analysis reports and visualizations
+│   ├── outputs/                           # XAI outputs (SHAP/LIME plots)
+│   ├── Milestone 1 - Description.pdf
+│   └── Previous Labs For Reference/
+│       ├── Lab 0.pdf
+│       ├── Lab 1.pdf
+│       ├── Lab 2.pdf
+│       ├── Lab 3.pdf
+│       └── Lab 4.pdf
+│
+├── Milestone 2/                           # (To be created)
+│
+├── Milestone 3/                           # (To be created)
+│
+├── General Description.pdf                # Overall project description
+└── README.md                              # This file
 ```
 
 ## Milestone 1 Objectives
@@ -64,6 +60,3 @@ Project/
 4. Trained model
 5. XAI outputs (SHAP/LIME plots)
 6. Inference function
-
-## Deadline
-**October 22, 2025 at 11:59 PM**
