@@ -1,1 +1,4 @@
-- [ ] What is data analysis ? 
+- [ ] What is data analysis mean ?
+ Do you need me to plot atleast one figure for each feature wala describe is enough
+
+- [ ] Can I do the removal of unnecessary columns alongside the feature selection
