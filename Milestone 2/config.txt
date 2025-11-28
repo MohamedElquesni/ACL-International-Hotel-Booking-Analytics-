@@ -1,0 +1,3 @@
+URI=neo4j://localhost:7687
+USERNAME=neo4j
+PASSWORD=ldISaqObPDxR9m6CaPMzziMe6sC2HaKuPBfKSs_j1xw
