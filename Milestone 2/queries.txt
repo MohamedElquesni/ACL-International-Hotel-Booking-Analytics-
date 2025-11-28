@@ -1,0 +1,36 @@
+//1. Retrieve the count of travellers who have visited a country where they don't need a visa. Include domestic travel (travellers visiting their own country) in the results.
+MATCH (t:Traveller)-[:FROM_COUNTRY]->(from_country:Country)
+MATCH (t)-[:STAYED_AT]->(h:Hotel)-[:LOCATED_IN]->(c:City)-[:LOCATED_IN]->(to_country:Country)
+WHERE from_country = to_country OR NOT (from_country)-[:NEEDS_VISA]->(to_country)
+RETURN count(DISTINCT t) as count
+
+//2. Retrieve the top 3 hotels with the highest average ratings for Business travellers. The average rating should be calculated as the average of score_overall from all reviews written by Business travellers for each hotel.
+MATCH (t:Traveller {type: 'Business'})-[:WROTE]->(r:Review)-[:REVIEWED]->(h:Hotel)
+WITH h, avg(r.score_overall) as avg_rating
+RETURN h.name as hotel_name, avg_rating
+ORDER BY avg_rating DESC
+LIMIT 3
+
+//3. Return the number of couple travellers who stayed at each hotel. Include all hotels in the results, even those with 0 couple travellers (show count as 0). Sort by Hotel name.
+MATCH (h:Hotel)
+OPTIONAL MATCH (t:Traveller {type: 'Couple'})-[:STAYED_AT]->(h)
+RETURN h.name as hotel_name, count(DISTINCT t) as couple_count
+ORDER BY h.name
+
+//4. Return the top 3 hotels with an average review cleanliness below 8.8. Sort by the average review cleanliness in ascending order.
+MATCH (h:Hotel)<-[:REVIEWED]-(r:Review)
+WITH h, avg(r.score_cleanliness) as avg_cleanliness
+WHERE avg_cleanliness < 8.8
+RETURN h.name as hotel_name, avg_cleanliness
+ORDER BY avg_cleanliness ASC
+LIMIT 3
+
+//5. Return all hotels with the highest scores for locations for women, using the average score_location from reviews (include all ties).
+MATCH (t:Traveller {gender: 'Female'})-[:WROTE]->(r:Review)-[:REVIEWED]->(h:Hotel)
+WITH h, avg(r.score_location) as avg_location_score
+WITH max(avg_location_score) as max_score
+MATCH (t2:Traveller {gender: 'Female'})-[:WROTE]->(r2:Review)-[:REVIEWED]->(h2:Hotel)
+WITH h2, avg(r2.score_location) as avg_location_score, max_score
+WHERE avg_location_score = max_score
+RETURN h2.name as hotel_name, avg_location_score
+ORDER BY h2.name

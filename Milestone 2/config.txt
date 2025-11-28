@@ -1,3 +1,3 @@
-URI=neo4j://localhost:7687
+URI=neo4j://127.0.0.1:7687
 USERNAME=neo4j
-PASSWORD=ldISaqObPDxR9m6CaPMzziMe6sC2HaKuPBfKSs_j1xw
+PASSWORD=MohamedNadine2025

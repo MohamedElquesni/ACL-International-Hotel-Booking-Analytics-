@@ -1,0 +1,18 @@
+// Exceeds Expectations Rule for Solo Female Travellers by Age Group
+// A hotel exceeds expectations when the sum of its base quality scores (cleanliness_base + comfort_base + facilities_base)
+// is greater than or equal to the average of the review scores (score_cleanliness + score_comfort + score_facilities)
+// from Solo Female travellers in each age group.
+
+MATCH (t:Traveller {type: 'Solo', gender: 'Female'})-[:WROTE]->(r:Review)-[:REVIEWED]->(h:Hotel)
+WITH t.age as age_group, h,
+     h.cleanliness_base + h.comfort_base + h.facilities_base as base_sum,
+     avg(r.score_cleanliness + r.score_comfort + r.score_facilities) as review_avg
+WHERE base_sum >= review_avg
+WITH age_group, h, base_sum, review_avg,
+     round(((base_sum - review_avg) / review_avg) * 100, 2) as improvement_percentage
+WITH age_group,
+     round(min(improvement_percentage), 1) as min_improve,
+     round(max(improvement_percentage), 1) as max_improve,
+     round(avg(improvement_percentage), 2) as avg_improve
+RETURN age_group, min_improve, max_improve, avg_improve
+ORDER BY age_group
