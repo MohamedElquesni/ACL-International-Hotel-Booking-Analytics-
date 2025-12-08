@@ -1,5 +1,7 @@
 # ACL Project - Graph-RAG Travel Assistant
 
+**Theme:** Hotel
+
 ## 📊 Project Progress
 
 ### Milestones Overview
@@ -10,6 +12,11 @@ Milestone 3: ░░░░░░░░░░░░░░░░░░░░   0% �
 ```
 
 **Deadline: December 15, 2025 at 23:59**
+
+### Task Options for Hotel Theme
+- [ ] Booking and Visa Assistant
+- [ ] Hotel Recommender System
+- [ ] Custom Task: ________________________________
 
 ---
 
@@ -23,7 +30,7 @@ Milestone 3: ░░░░░░░░░░░░░░░░░░░░   0% �
 
 - [ ] **Entity Extraction**
   - [ ] Set up Named Entity Recognition (NER)
-  - [ ] Extract theme-specific entities (hotels/cities/countries OR players/teams OR flights/airports)
+  - [ ] Extract Hotel theme entities: hotels, cities, countries, traveller types, demographics
   - [ ] Use extracted entities to fill Cypher query parameters
 
 - [ ] **Input Embedding** (only if using embeddings approach in Part 2b)
@@ -37,16 +44,16 @@ Milestone 3: ░░░░░░░░░░░░░░░░░░░░   0% �
 #### Experiment 1: Baseline (Cypher Queries)
 
 - [ ] **Write At Least 10 Cypher Query Templates**
-  - [ ] Query 1: ________________________________
-  - [ ] Query 2: ________________________________
-  - [ ] Query 3: ________________________________
-  - [ ] Query 4: ________________________________
-  - [ ] Query 5: ________________________________
-  - [ ] Query 6: ________________________________
-  - [ ] Query 7: ________________________________
-  - [ ] Query 8: ________________________________
-  - [ ] Query 9: ________________________________
-  - [ ] Query 10: ________________________________
+  - [ ] Query 1 (Hotel Search): Find hotels in [city] with rating > [X]
+  - [ ] Query 2 (Review Retrieval): Get reviews for [hotel_name]
+  - [ ] Query 3 (Amenity Filtering): Find hotels with [amenity] in [location]
+  - [ ] Query 4 (Location-Based): Find all hotels in [country/city]
+  - [ ] Query 5 (Visa Requirements): Get visa requirements for [country]
+  - [ ] Query 6 (Price Range): Find hotels with price between [X] and [Y]
+  - [ ] Query 7 (Traveller Type): Find hotels suitable for [traveller_type]
+  - [ ] Query 8 (Top Rated): Get top-rated hotels in [location]
+  - [ ] Query 9 (Nearby Hotels): Find hotels near [landmark/location]
+  - [ ] Query 10 (Custom): ________________________________
 
 - [ ] **Execute Queries to Retrieve Information**
   - [ ] Use Cypher queries to fetch nodes, relationships, and properties from KG
@@ -55,8 +62,8 @@ Milestone 3: ░░░░░░░░░░░░░░░░░░░░   0% �
 #### Experiment 2: Embeddings
 
 - [ ] **Choose ONE Embedding Approach**
-  - [ ] Option A: Node Embeddings (create vector representations for each node)
-  - [ ] Option B: Feature Vector Embeddings (create vector representations for feature combinations)
+  - [ ] Option A: Node Embeddings (use graph embedding techniques like Node2Vec, GraphSAGE, or text embeddings of node properties)
+  - [ ] Option B: Feature Vector Embeddings (combine hotel name, location, amenities, rating, review text into single feature vector)
 
 - [ ] **Experiment with Embedding Model 1**
   - [ ] Model name: ________________________________
@@ -82,7 +89,7 @@ Milestone 3: ░░░░░░░░░░░░░░░░░░░░   0% �
 
 - [ ] **Use Structured Prompt: Context + Persona + Task**
   - [ ] **Context:** Include retrieved KG information (nodes, relationships, data)
-  - [ ] **Persona:** Define assistant's role (e.g., "You are a helpful travel assistant")
+  - [ ] **Persona:** Define assistant's role (e.g., "You are a helpful hotel travel assistant")
   - [ ] **Task:** Clear instructions on what to do with context (e.g., "Answer the user's question using only the provided information")
 
 - [ ] **Compare At Least Three LLM Models**
@@ -108,7 +115,7 @@ Milestone 3: ░░░░░░░░░░░░░░░░░░░░   0% �
 - [ ] **Optional Features (encouraged but not required)**
   - [ ] **Cypher Queries Executed:** Show actual Cypher queries that were run
   - [ ] **Graph Visualization Snippets:** Visualize retrieved subgraph (nodes and relationships)
-  - [ ] **Recommendations:** Display ranked recommendations with explanations (if implementing recommender)
+  - [ ] **Recommendations:** Display hotel recommendations with explanations
   - [ ] **Model Selection Dropdown:** Allow users to select which LLM to use
   - [ ] **Retrieval Method Selection:** Allow users to choose baseline, embeddings, or both
 
@@ -256,6 +263,12 @@ Milestone 3: ░░░░░░░░░░░░░░░░░░░░   0% �
 - ✅ You are free to define any creative task/use case, as long as core Graph-RAG pipeline is implemented
 - ✅ You will be evaluated on: system integration, design, functionality, and attempts of improvement
 - ✅ **There is NO threshold for performance** - focus on the implementation and learning process
+
+### Hotel Theme Specifics
+- **Focus areas:** Hotel search, reviews, recommendations, visa requirements
+- **Entities:** Hotels, cities, countries, traveller types, demographics
+- **Use textual review content** for feature vector embeddings
+- **Consider:** Traveller demographics and preferences in recommendations
 
 ### Useful Documentation Links
 - [Neo4j Documentation](https://neo4j.com/docs/)
