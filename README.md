@@ -19,18 +19,16 @@ Milestone 3: ░░░░░░░░░░░░░░░░░░░░   0% �
 
 - [ ] **Intent Classification**
   - [ ] Implement intent classifier (rule-based, LLM-based, or hybrid)
-  - [ ] Test with different user queries
-  - [ ] Document classification accuracy
+  - [ ] Classify what user wants to do (ask question, get recommendations, search entities)
 
 - [ ] **Entity Extraction**
-  - [ ] Set up Named Entity Recognition (NER) using spaCy
+  - [ ] Set up Named Entity Recognition (NER)
   - [ ] Extract theme-specific entities (hotels/cities/countries OR players/teams OR flights/airports)
-  - [ ] Test entity extraction on sample queries
+  - [ ] Use extracted entities to fill Cypher query parameters
 
-- [ ] **Input Embedding**
-  - [ ] Choose embedding model (e.g., all-MiniLM-L6-v2)
-  - [ ] Implement text-to-vector conversion
-  - [ ] Store embeddings for semantic search
+- [ ] **Input Embedding** (only if using embeddings approach in Part 2b)
+  - [ ] Choose embedding model
+  - [ ] Convert user text input into vector representation for semantic similarity search
 
 ---
 
@@ -38,7 +36,7 @@ Milestone 3: ░░░░░░░░░░░░░░░░░░░░   0% �
 
 #### Experiment 1: Baseline (Cypher Queries)
 
-- [ ] **Write 10+ Cypher Query Templates**
+- [ ] **Write At Least 10 Cypher Query Templates**
   - [ ] Query 1: ________________________________
   - [ ] Query 2: ________________________________
   - [ ] Query 3: ________________________________
@@ -50,326 +48,219 @@ Milestone 3: ░░░░░░░░░░░░░░░░░░░░   0% �
   - [ ] Query 9: ________________________________
   - [ ] Query 10: ________________________________
 
-- [ ] **Implement Query Execution**
-  - [ ] Connect to Neo4j database
-  - [ ] Map intents to appropriate queries
-  - [ ] Extract entities and fill query parameters
-  - [ ] Retrieve results from Knowledge Graph
-
-- [ ] **Test Baseline Retrieval**
-  - [ ] Test all 10 queries with sample questions
-  - [ ] Document retrieval accuracy
-  - [ ] Note edge cases and failures
+- [ ] **Execute Queries to Retrieve Information**
+  - [ ] Use Cypher queries to fetch nodes, relationships, and properties from KG
+  - [ ] Pass extracted entities from input to query the KG and retrieve answers
 
 #### Experiment 2: Embeddings
 
-- [ ] **Choose Embedding Approach**
-  - [ ] Option A: Node Embeddings (for numerical data)
-  - [ ] Option B: Feature Vector Embeddings (for textual data)
+- [ ] **Choose ONE Embedding Approach**
+  - [ ] Option A: Node Embeddings (create vector representations for each node)
+  - [ ] Option B: Feature Vector Embeddings (create vector representations for feature combinations)
 
-- [ ] **Implement Embedding Model 1**
+- [ ] **Experiment with Embedding Model 1**
   - [ ] Model name: ________________________________
-  - [ ] Create vector representations
-  - [ ] Store in Neo4j vector index
-  - [ ] Test semantic similarity search
+  - [ ] Implement semantic similarity search using vector embeddings
 
-- [ ] **Implement Embedding Model 2**
+- [ ] **Experiment with Embedding Model 2**
   - [ ] Model name: ________________________________
-  - [ ] Create vector representations
-  - [ ] Store in Neo4j vector index
-  - [ ] Test semantic similarity search
+  - [ ] Implement semantic similarity search using vector embeddings
 
-- [ ] **Compare Embedding Models**
-  - [ ] Measure retrieval accuracy
-  - [ ] Measure response time
-  - [ ] Document which performs better
-  - [ ] Create comparison table
+- [ ] **Compare the Two Embedding Models**
+  - [ ] Document experiment results for both models
+  - [ ] Show which performs better
 
 ---
 
 ### 🤖 Part 3: LLM Layer
 
-- [ ] **Set Up LLM Infrastructure**
-  - [ ] Create HuggingFace account and API token
-  - [ ] Test API connection
+- [ ] **Combine KG Results from Baseline and Embeddings**
+  - [ ] Merge results from Cypher queries (baseline)
+  - [ ] Merge results from embedding-based retrieval
+  - [ ] Create unified context with retrieved nodes, relationships, and data
+  - [ ] Remove duplicates if needed
 
-- [ ] **Implement LLM Model 1**
-  - [ ] Model name: ________________________________
-  - [ ] Implement API integration
-  - [ ] Test basic queries
+- [ ] **Use Structured Prompt: Context + Persona + Task**
+  - [ ] **Context:** Include retrieved KG information (nodes, relationships, data)
+  - [ ] **Persona:** Define assistant's role (e.g., "You are a helpful travel assistant")
+  - [ ] **Task:** Clear instructions on what to do with context (e.g., "Answer the user's question using only the provided information")
 
-- [ ] **Implement LLM Model 2**
-  - [ ] Model name: ________________________________
-  - [ ] Implement API integration
-  - [ ] Test basic queries
+- [ ] **Compare At Least Three LLM Models**
+  - [ ] **LLM Model 1:** ________________________________
+  - [ ] **LLM Model 2:** ________________________________
+  - [ ] **LLM Model 3:** ________________________________
 
-- [ ] **Implement LLM Model 3**
-  - [ ] Model name: ________________________________
-  - [ ] Implement API integration
-  - [ ] Test basic queries
-
-- [ ] **Prompt Engineering**
-  - [ ] Design Context section
-  - [ ] Design Persona section
-  - [ ] Design Task section
-  - [ ] Test prompt variations
-
-- [ ] **Combine Retrieval Results**
-  - [ ] Merge baseline Cypher results
-  - [ ] Merge embedding-based results
-  - [ ] Remove duplicates
-  - [ ] Rank/prioritize results
-
-- [ ] **LLM Comparison & Evaluation**
-  - [ ] Create test question set (minimum 10 questions)
-  - [ ] Run all 3 models on test set
-  - [ ] **Quantitative Metrics:**
-    - [ ] Measure accuracy
-    - [ ] Measure response time
-    - [ ] Measure token usage
-    - [ ] Calculate cost (if applicable)
-  - [ ] **Qualitative Evaluation:**
-    - [ ] Rate answer quality (1-5 scale)
-    - [ ] Rate relevance to question
-    - [ ] Rate naturalness of language
-    - [ ] Rate correctness
-  - [ ] Create comparison table
-  - [ ] Document best performing model
+- [ ] **Comparison Must Include Qualitative AND Quantitative Impressions**
+  - [ ] **Quantitative:** Metrics like accuracy, response time, token usage, cost
+  - [ ] **Qualitative:** Human evaluation of answer quality, relevance, naturalness, correctness
+  - [ ] Create comparison table/report
+  - [ ] Document which model performs best
 
 ---
 
-### 💻 Part 4: Build UI (Streamlit)
+### 💻 Part 4: Build UI (e.g., Streamlit)
 
-- [ ] **Set Up Streamlit**
-  - [ ] Install Streamlit
-  - [ ] Create basic app structure
-  - [ ] Test local deployment
+- [ ] **Required Features**
+  - [ ] Allow user to input questions
+  - [ ] **View KG-retrieved context** (show raw information retrieved from KG before LLM processing)
+  - [ ] **View final LLM answer** (display LLM's response to user's query)
 
-- [ ] **Core UI Features (Required)**
-  - [ ] Text input for user questions
-  - [ ] Display KG-retrieved context
-  - [ ] Display final LLM answer
-  - [ ] Add styling/formatting
-
-- [ ] **Optional UI Features**
-  - [ ] Display executed Cypher queries
-  - [ ] Graph visualization snippets (NetworkX/Plotly)
-  - [ ] Show recommendations with explanations
-  - [ ] Model selection dropdown (switch between LLMs)
-  - [ ] Retrieval method selection (baseline/embeddings/both)
-
-- [ ] **Testing**
-  - [ ] Test with 10+ different queries
-  - [ ] Test all model combinations
-  - [ ] Fix bugs and edge cases
-  - [ ] Ensure smooth user experience
+- [ ] **Optional Features (encouraged but not required)**
+  - [ ] **Cypher Queries Executed:** Show actual Cypher queries that were run
+  - [ ] **Graph Visualization Snippets:** Visualize retrieved subgraph (nodes and relationships)
+  - [ ] **Recommendations:** Display ranked recommendations with explanations (if implementing recommender)
+  - [ ] **Model Selection Dropdown:** Allow users to select which LLM to use
+  - [ ] **Retrieval Method Selection:** Allow users to choose baseline, embeddings, or both
 
 ---
 
-### 📊 Part 5: Experiments & Analysis
+### 📊 Part 5: Experiments, Results, & Improvements
+
+**Your final presentation must include:**
+
+- [ ] **System Architecture**
+  - [ ] Document overall system design, components, and how they interact
+  - [ ] Show pipeline: preprocessing → retrieval → LLM → UI
+  - [ ] Include architecture diagrams
+
+- [ ] **Retrieval Strategy and Examples**
+  - [ ] Explain Cypher queries
+  - [ ] Explain embedding approach
+  - [ ] Show example queries and their results
+  - [ ] Document both baseline and embedding-based retrieval strategies
+
+- [ ] **LLM Comparison**
+  - [ ] Present quantitative metrics comparing 3+ models
+  - [ ] Present qualitative analysis comparing 3+ models
 
 - [ ] **Error Analysis**
-  - [ ] Document 5+ failure cases
-  - [ ] Analyze why each failed
-  - [ ] Propose improvements
+  - [ ] Document cases where the system failed
+  - [ ] Explain why it failed
+  - [ ] Explain how it could be improved
 
-- [ ] **Improvements Implemented**
-  - [ ] List all enhancements made
-  - [ ] Document before/after comparison
-  - [ ] Measure improvement impact
+- [ ] **Improvements Added**
+  - [ ] Describe enhancements you made to overcome limitations
 
 - [ ] **Remaining Limitations**
-  - [ ] Document current system limitations
-  - [ ] Suggest future work
-  - [ ] Be honest about what doesn't work
-
-- [ ] **System Architecture Diagram**
-  - [ ] Create visual diagram showing all components
-  - [ ] Show data flow (Input → Preprocessing → Retrieval → LLM → UI)
-  - [ ] Include all technologies used
+  - [ ] Acknowledge what the system cannot do well
+  - [ ] Describe what would need further work
 
 ---
 
 ## 📑 Presentation Checklist (18-22 minutes)
 
-### Slide Preparation
+**Presentation Outline (from guidelines):**
 
-- [ ] **Slide 1: Title Slide**
-  - [ ] Project name
-  - [ ] Team members
-  - [ ] Date
+- [ ] **High-Level System Architecture (2 min)**
+  - [ ] Show overview of pipeline
+  - [ ] Present task of choice
+  - [ ] Mention if external dataset was used
 
-- [ ] **Slide 2-3: High-Level System Architecture (2 min)**
-  - [ ] Pipeline overview diagram
-  - [ ] Task chosen (QA/booking/recommender)
-  - [ ] External dataset (if used)
-
-- [ ] **Slide 4-5: Input Preprocessing (2 min)**
-  - [ ] Intent classifier explanation
-  - [ ] Entity extraction examples
+- [ ] **Input Preprocessing (2 min)**
+  - [ ] Intent classifier (rule-based, LLM-based, or hybrid)
+  - [ ] Entity extraction, with examples
   - [ ] Embedding step (if used)
 
-- [ ] **Slide 6-7: Graph Retrieval - Baseline (2-3 min)**
-  - [ ] Show 10 Cypher query templates
-  - [ ] Example retrieved nodes/relationships
-  - [ ] Sample output
+- [ ] **Graph Retrieval Layer - Baseline (2-3 min)**
+  - [ ] Show your Cypher query templates (at least 10 should be implemented)
+  - [ ] Show snippet of retrieved nodes/relationships
 
-- [ ] **Slide 8-9: Graph Retrieval - Embeddings (2-3 min)**
-  - [ ] Approach chosen (Node or Feature Vector)
-  - [ ] Two embedding models compared
-  - [ ] Experiment results table
+- [ ] **Graph Retrieval Layer - Embedding-Based Retrieval (2-3 min)**
+  - [ ] State approach selected: Node embeddings OR Feature vector embeddings
+  - [ ] Show the two embedding models compared, with experiment results
 
-- [ ] **Slide 10-12: LLM Layer (3-4 min)**
-  - [ ] Context construction explanation
-  - [ ] Prompt structure examples
-  - [ ] LLM comparison table (3+ models)
-  - [ ] Quantitative metrics graph
-  - [ ] Qualitative evaluation summary
+- [ ] **LLM Layer (3-4 min)**
+  - [ ] Context Construction: how you integrate input, baseline Cypher output, and embedding output
+  - [ ] Prompt Structure (context, persona, task)
+  - [ ] LLMs Comparison: quantitative metrics and qualitative evaluation
 
-- [ ] **Slide 13-14: Error Analysis & Improvements (2 min)**
-  - [ ] 3-5 failure cases with explanations
-  - [ ] Improvements implemented
-  - [ ] Before/after comparison
+- [ ] **Error Analysis & Improvements (2 min)**
+  - [ ] Document failure cases and explanations
+  - [ ] Show improvements implemented
 
-- [ ] **Live Demo Preparation (4-5 min)**
-  - [ ] Prepare 5+ demo questions
-  - [ ] Test demo multiple times
-  - [ ] Prepare backup plan if demo fails
-  - [ ] Screenshots as backup
+- [ ] **Live Demo (4-5 min)**
+  - [ ] Wrap up full pipeline (from raw input to final answer)
+  - [ ] Demo must be live (not recorded video)
+  - [ ] Must be able to switch between embedding models
+  - [ ] Must be able to switch between LLMs
+  - [ ] Use chosen questions to demonstrate integration
+  - [ ] Demo must show integration, not isolated components
+  - [ ] UI should reflect the process done in background
 
-### Demo Checklist
+### Presentation Guidelines
 
-- [ ] **Demo Setup**
-  - [ ] Streamlit app runs smoothly
-  - [ ] Neo4j database is accessible
-  - [ ] All models are loaded and ready
-  - [ ] Internet connection works
+**What NOT to do:**
+- [ ] Do NOT explain concepts from labs
+- [ ] Do NOT add introductions, problem statements, motivations, or related work
+- [ ] Do NOT depend only on diagrams, only on text, or only on screenshots
+- [ ] Do NOT use text-heavy descriptions
+- [ ] Do NOT include dataset descriptions or high-level theme overviews
 
-- [ ] **Demo Flow**
-  - [ ] Explain full pipeline first
-  - [ ] Show ability to switch embedding models
-  - [ ] Show ability to switch LLMs
-  - [ ] Ask 3-5 questions live
-  - [ ] Show KG context being retrieved
-  - [ ] Show final LLM answer
+**Regulations:**
+- [ ] All team members must participate in presentation
+- [ ] Presentation slides must be submitted by December 15th at 23:59
+- [ ] Each team member responsible for one component (distribute work equally)
 
-- [ ] **Backup Plan**
-  - [ ] Record demo video (in case of technical issues)
-  - [ ] Take screenshots of all steps
-  - [ ] Have sample outputs ready
-
-### Presentation Delivery
-
-- [ ] **Team Coordination**
-  - [ ] Assign sections to each team member
-  - [ ] Practice transitions between speakers
-  - [ ] Time each section (stay within 18-22 min)
-  - [ ] Rehearse full presentation 2-3 times
-
-- [ ] **Individual Q&A Preparation**
-  - [ ] Each member: Review their code thoroughly
-  - [ ] Each member: Prepare to explain design decisions
-  - [ ] Each member: Prepare to walk through code
-  - [ ] Each member: Review error cases in their component
+**Individual Q&A (after presentation):**
+- [ ] Each member will be examined individually on their specific component
+- [ ] Multiple rounds per person depending on remaining time
+- [ ] You may be asked to walk through code, explain operations, discuss errors, or justify decisions
+- [ ] **Only the person asked may answer**
 
 ---
 
-## 📤 Submission Checklist
+## 📤 Submission Guidelines
 
-### Code Submission (Due: Dec 15 at 23:59)
+**Deadline: December 15th at 23:59**
 
-- [ ] **GitHub Repository**
-  - [ ] Create "Milestone3" branch
-  - [ ] Commit all code
-  - [ ] Include requirements.txt or environment.yml
-  - [ ] Include data files (or instructions to obtain them)
-  - [ ] Push to GitHub
-  - [ ] Keep private until deadline
+- [ ] **Submit GitHub repository**
+  - [ ] Create branch named "Milestone3"
+  - [ ] Include all code and requirements
+  - [ ] Keep repository private until deadline
 
-- [ ] **Code Organization**
-  - [ ] Clean, commented code
-  - [ ] README with setup instructions
-  - [ ] Remove unnecessary files
-  - [ ] Test that code runs from scratch
+- [ ] **Submit link to presentation slides**
 
-- [ ] **Presentation Slides**
-  - [ ] Export to PDF
-  - [ ] Upload to submission form
-  - [ ] Include link in README
-
-- [ ] **Submit Form**
-  - [ ] Submit GitHub repository link
-  - [ ] Submit presentation slides link
-  - [ ] Submit before deadline
-
-### Post-Deadline
-
-- [ ] Make repository public OR add "csen903w25-sys" as collaborator
-- [ ] Verify all files are accessible
+- [ ] **After deadline:**
+  - [ ] Make repository public OR add "csen903w25-sys" as collaborator for grading
 
 ---
 
-## 📅 Evaluation Day Checklist (Dec 16)
+## 📅 Evaluation (December 16)
 
-### Before Your Slot
+**Format: 45-minute slot per team**
 
-- [ ] Arrive 10 minutes early
-- [ ] Test laptop and projector connection
-- [ ] Open all necessary applications
-- [ ] Close unnecessary tabs/applications
-- [ ] Have backup on USB drive
-- [ ] Charge laptop fully
+### Part 1: Team Presentation (15% of grade)
+- [ ] 18-22 minutes minimum/maximum
+- [ ] Focus on: system architecture, pipeline integration, retrieval strategies, experimental results, live demo
+- [ ] Evaluates: functionality, completeness, performance of Graph-RAG pipeline
+- [ ] All team members must participate
 
-### During Evaluation (45 minutes total)
-
-- [ ] **Presentation (18-22 min)**
-  - [ ] Stay within time limit
-  - [ ] All team members participate
-  - [ ] Speak clearly and confidently
-  - [ ] Show live demo
-  - [ ] Handle questions gracefully
-
-- [ ] **Individual Q&A (remaining time)**
-  - [ ] Only the person asked answers
-  - [ ] Be honest if you don't know
-  - [ ] Explain your code clearly
-  - [ ] Discuss design decisions
+### Part 2: Individual Q&A Evaluation (15% of grade)
+- [ ] Each member examined individually on their specific component
+- [ ] Multiple rounds per person possible (depending on remaining time)
+- [ ] Questions about: code walkthrough, operations sequence, error cases, implementation decisions
+- [ ] **When a question is directed to a specific member, only that member is allowed to answer**
 
 ---
 
-## 🎯 Final Tips
+## 📚 Resources & Important Notes
 
-### Do's ✅
-- Start early (don't wait until last minute)
-- Test everything multiple times
-- Document as you go
-- Ask for help during office hours
-- Use free models to avoid costs
-- Keep it simple and functional
-- Be honest about limitations
+### Required Labs (Milestone 3 folder)
+- Lab 6: Knowledge Graphs
+- Lab 7: Introduction to Neuro-Symbolic AI
+- Lab 8: Retrieval Augmented Generation Using LangChain
 
-### Don'ts ❌
-- Don't overcomplicate the system
-- Don't skip testing
-- Don't leave demo until last day
-- Don't explain concepts from labs (assume they know)
-- Don't add unnecessary features
-- Don't arrive late to evaluation
-- Don't panic during Q&A
+### Important Notes from Milestone Description
+- ✅ You ARE allowed to add to existing schema and/or integrate data with external dataset
+- ✅ Question Answering System is the primary task (option to extend to other tasks)
+- ✅ You are free to define any creative task/use case, as long as core Graph-RAG pipeline is implemented
+- ✅ You will be evaluated on: system integration, design, functionality, and attempts of improvement
+- ✅ **There is NO threshold for performance** - focus on the implementation and learning process
 
----
-
-## 📚 Resources
-
-### Required Labs
-- [Lab 6: Knowledge Graphs](Milestone 3/Required Labs/Lab 6.pdf)
-- [Lab 7: Neuro-Symbolic AI](Milestone 3/Required Labs/Lab 7.pdf)
-- [Lab 8: RAG with LangChain](Milestone 3/Required Labs/Lab 8.pdf)
-
-### Useful Links
+### Useful Documentation Links
 - [Neo4j Documentation](https://neo4j.com/docs/)
 - [LangChain Documentation](https://python.langchain.com/)
-- [HuggingFace Models](https://huggingface.co/models)
+- [HuggingFace Models (free)](https://huggingface.co/models)
 - [Streamlit Documentation](https://docs.streamlit.io/)
 
 ---
