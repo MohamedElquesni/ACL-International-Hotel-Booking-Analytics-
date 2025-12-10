@@ -1,2 +1,25 @@
-- Will there be model answer for MS2
-- How many intents are required ?
+- [] Will there be model answer for MS2
+- [] How many intents are required ? 
+- [] Our Intent good enough in terms of number and quality? 
+  1. hotel_search - Find hotels by location/rating
+  2. hotel_recommendation - Get personalized hotel suggestions
+  3. visa_information - Check visa requirements
+  4. review_query - Read hotel reviews/ratings
+  5. hotel_comparison - Compare multiple hotels
+  6. general_question - General travel questions
+
+- [] Is ground query considered as intent
+- [] The dataset is bad, we have one hotel per country (overall 25 countries) 
+    -Hotel comparison within same city (impossible)
+    - Search results (only 1 option per location)
+    - Recommendations (very limited choices)
+  - Can/should you augment with external data? The README says you're allowed to integrate external datasets
+    Or is this limitation acceptable for grading purposes?
+- [] Should the model do something extra than Question and answer?
+- [] Quantitative evaluation: What specific metrics should you use for:
+    - Overall system performance?
+    - Intent classification accuracy?
+    - Retrieval quality?
+    - Baseline for comparison: What should you compare your embedding approaches against?
+    
+- [] Difference between feature based and Node based embedded

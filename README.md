@@ -24,14 +24,14 @@ Milestone 3: ░░░░░░░░░░░░░░░░░░░░   0% �
 
 ### 🔧 Part 1: Input Preprocessing
 
-- [ ] **Intent Classification**
-  - [ ] Implement intent classifier (rule-based, LLM-based, or hybrid)
-  - [ ] Classify what user wants to do (ask question, get recommendations, search entities)
+- [x] **Intent Classification**
+  - [x] Implement intent classifier (rule-based, LLM-based, or hybrid)
+  - [x] Classify what user wants to do (ask question, get recommendations, search entities)
 
-- [ ] **Entity Extraction**
-  - [ ] Set up Named Entity Recognition (NER)
-  - [ ] Extract Hotel theme entities: hotels, cities, countries, traveller types, demographics
-  - [ ] Use extracted entities to fill Cypher query parameters
+- [x] **Entity Extraction**
+  - [x] Set up Named Entity Recognition (NER)
+  - [x] Extract Hotel theme entities: hotels, cities, countries, traveller types, demographics
+  - [x] Use extracted entities to fill Cypher query parameters
 
 - [ ] **Input Embedding** (only if using embeddings approach in Part 2b)
   - [ ] Choose embedding model
@@ -53,7 +53,9 @@ Milestone 3: ░░░░░░░░░░░░░░░░░░░░   0% �
   - [ ] Query 7 (Traveller Type): Find hotels suitable for [traveller_type]
   - [ ] Query 8 (Top Rated): Get top-rated hotels in [location]
   - [ ] Query 9 (Nearby Hotels): Find hotels near [landmark/location]
-  - [ ] Query 10 (Custom): ________________________________
+  - [ ] Query 10 (Hotel Comparison): Compare features/ratings between 2+ hotels
+  - [ ] Query 11 (Budget Hotels): Find cheapest hotels in [location]
+  - [ ] Query 12 (Custom): ________________________________
 
 - [ ] **Execute Queries to Retrieve Information**
   - [ ] Use Cypher queries to fetch nodes, relationships, and properties from KG

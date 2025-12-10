@@ -1,0 +1,78 @@
+Mayar's Notes (Shady) :
+
+Drop review text
+Let's say we have 5000 review -> I'll use maybe 1000 review that have some for solo,female, male,..etc 
+Now divide the 1000 into 250 reviews (4 parts) and give it to chatgpt 
+Each one of the 4 members of the team. Send a part to chatgpt with prompt: Generate Human Reviews for that task (given that If I am staying at middle east country focus on history,.. Or Usa focus on activities,..)
+You will get generated text like thousand of generated reviews like for example (My stay at Egypt was great because of the history ...)
+ 
+Will always be enabled (baseline - Knowledge graph) : 
+question 
+intent classifaction 
+get the queries (baseline) 
+send results to the llm 
+
+If i want to use baseline + Rag : 
+
+If baseline does not output 
+If the rag outputs something that is similar you can output something : My knowledge base does not contain the answer but these reviews were similar to yours and start to answer from them 
+If the rag does not output then you can say i have nothing
+
+----------------------------------------------------------------------------------------------------------
+(Nadine)
+
+You are allowed to modify and use external dataset with the knowledge graph
+10 cypher queries answering 10 questions if you want to have one intent per questions that is fine and if you want to group some queries in one intent that is fine 
+Your intent should not be not top 10 hotels, it should be i am a 20 year old traveler and low on budget...etc
+ground query --> "I do not know the answer to your question". Make sure that you set this because llms do not tend to say that you do not know the answer.
+add more cities and hotels to a certain country if you do not want to maybe tackle on the 25 countries
+select sample of 1000 reviews of some representation gender age types with city name and hotel name and some reviews not all of them and generate human reviews maybe history of the place or whatever
+
+
+Now you have two pipelines 
+
+Pipeline 1 : Input preprocessing : Take English scentence and find the most relevant review story
+Find the intent 
+Select query
+Fill query with attributes
+Results 
+
+Pipeline 2: You get the reviews and you get the distance between the two vectors if the distance is too far you get to not choose it, you put a threshold maybe with try and error
+
+I can get to choose if I will use the rag component (embedding) : 
+If baseline gets answer(graph) and the retrievel embedding got answer --> augemnation on the llm as I like
+if baseline did not get answer but retrieval got --> will say I do not know but here are some results 
+if baseline did get not get an answer and retrival did not --> will say i did not know 
+
+
+Quantitive : 
+
+queries get correct answer but the llm does not show 
+how consistent it is with numbers when you know it has the answer
+did it follow the instructions
+hhow many times deos it read the correct nodes and extract from graph correctly 
+
+qualtitive:
+Is it relatble to what i was asking'
+did it follow the instructions ? how to extract the answers correctlyu 
+the order of the instruction did it affect it
+
+Save your experiements
+
+document all your experiements and sequence on the repo 
+
+use two different models to embed and who of them gets better distance and faster and compare of them and move with one of these
+
+now you have 3 llms 
+baseline with embedding of the one you choose
+record limitations of the intent classification approach you went to and its up 
+
+
+
+
+
+
+
+
+
+
