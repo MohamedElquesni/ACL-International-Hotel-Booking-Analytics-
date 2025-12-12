@@ -1,0 +1,1402 @@
+[
+  {
+    "hotel_name": "Aztec Heights",
+    "city": "Mexico City",
+    "country": "Mexico",
+    "star_rating": 5.0,
+    "traveller_type": "Business",
+    "review_text": "I recently stayed at Aztec Heights during a business trip to Mexico City, and I have to say, I was quite impressed. The location is fantastic—right in the heart of the city and close to everything I needed for my meetings. The staff were really nice too; they went out of their way to help me with some last-minute arrangements. The room itself was comfortable, which was a relief after long days of work. I also appreciated the facilities; they had everything I needed to stay productive. Overall, it was a great experience, though I felt the value for money could be a touch better. But all in all, I’d definitely recommend it for anyone traveling on business!",
+    "metadata": {
+      "avg_overall": 8.624821002386632,
+      "avg_cleanliness": 8.19832935560859,
+      "avg_comfort": 8.611217183770881,
+      "avg_location": 9.26945107398567
+    }
+  },
+  {
+    "hotel_name": "Aztec Heights",
+    "city": "Mexico City",
+    "country": "Mexico",
+    "star_rating": 5.0,
+    "traveller_type": "Couple",
+    "review_text": "We just returned from an amazing trip to Mexico City, and staying at Aztec Heights made it all the more memorable! The location was fantastic—right in the heart of the city, making it super easy for us to explore all the vibrant neighborhoods and delicious street food spots. Our room was impressively comfortable and spotless, which made it a relaxing retreat after long days of sightseeing. \n\nThe staff were friendly and attentive, always ready to help with any questions we had. While the facilities were nice, we expected a bit more variety in terms of amenities. Overall, though, we felt we got great value for our stay, and we can't wait to come back!",
+    "metadata": {
+      "avg_overall": 8.758636363636377,
+      "avg_cleanliness": 9.094242424242418,
+      "avg_comfort": 9.230454545454556,
+      "avg_location": 9.014393939393939
+    }
+  },
+  {
+    "hotel_name": "Aztec Heights",
+    "city": "Mexico City",
+    "country": "Mexico",
+    "star_rating": 5.0,
+    "traveller_type": "Family",
+    "review_text": "We just returned from a family trip to Mexico City, and staying at Aztec Heights was a real highlight. The facilities were fantastic, offering something for everyone—from a lovely pool where the kids could splash around to a cozy lounge area where we could unwind after a long day of exploring. We also appreciated how clean everything was; it felt spotless and well-maintained, which is always a plus when traveling with little ones. The staff was very good, always friendly and ready to help us with our questions about the area. The location was decent, making it easy to access popular spots without too much hassle. Overall, it was a great experience, and we’d definitely consider coming back!",
+    "metadata": {
+      "avg_overall": 8.864777327935231,
+      "avg_cleanliness": 9.062753036437245,
+      "avg_comfort": 8.946153846153846,
+      "avg_location": 8.719635627530376
+    }
+  },
+  {
+    "hotel_name": "Aztec Heights",
+    "city": "Mexico City",
+    "country": "Mexico",
+    "star_rating": 5.0,
+    "traveller_type": "Solo",
+    "review_text": "I recently stayed at Aztec Heights during my solo trip to Mexico City, and I have to say, I was really impressed! The location is fantastic—right in the heart of the city, making it easy to explore all the vibrant neighborhoods. The staff were incredibly welcoming and attentive, which made me feel right at home. My room was very comfortable, perfect for unwinding after a day of sightseeing. While the cleanliness was good, I found a few areas that could use a bit more attention. Overall, I had a wonderful experience and would definitely recommend Aztec Heights to fellow travelers looking for a great stay in this amazing city!",
+    "metadata": {
+      "avg_overall": 8.770533642691431,
+      "avg_cleanliness": 8.458932714617173,
+      "avg_comfort": 8.632714617169366,
+      "avg_location": 8.999535962877037
+    }
+  },
+  {
+    "hotel_name": "Berlin Mitte Elite",
+    "city": "Berlin",
+    "country": "Germany",
+    "star_rating": 5.0,
+    "traveller_type": "Business",
+    "review_text": "I recently stayed at Berlin Mitte Elite during a business trip, and overall, it was a very good experience. The location is fantastic—just a short walk to key meeting spots and local attractions, which made commuting a breeze. The facilities were impressive too; everything was modern and well-maintained. \n\nThe comfort of my room was excellent; I slept wonderfully after long days of conferences. I did notice the cleanliness could be a touch better, but it wasn’t a major issue. The staff were friendly and attentive, making my stay more enjoyable. While the value for money was decent, I felt that the experience overall justified the cost. I would definitely consider staying here again on my next visit!",
+    "metadata": {
+      "avg_overall": 8.868122270742358,
+      "avg_cleanliness": 8.613318777292582,
+      "avg_comfort": 8.841703056768562,
+      "avg_location": 9.372707423580778
+    }
+  },
+  {
+    "hotel_name": "Berlin Mitte Elite",
+    "city": "Berlin",
+    "country": "Germany",
+    "star_rating": 5.0,
+    "traveller_type": "Couple",
+    "review_text": "We recently stayed at the Berlin Mitte Elite for a romantic getaway, and overall, it was a fantastic experience! The cleanliness was impressive; our room felt immaculate and well-maintained, which made us feel right at home. Comfort was another highlight; the bed was so cozy that we didn’t want to get out in the mornings! \n\nThe location is ideal for exploring Berlin, with plenty of attractions within walking distance. However, we found the facilities to be just a bit lacking—while the gym was decent, it could use a few more options. The staff were friendly and helpful, though there were moments when service was a bit slow. All in all, it was a wonderful stay, and we’d definitely recommend it for couples looking for a nice escape!",
+    "metadata": {
+      "avg_overall": 9.007703703703719,
+      "avg_cleanliness": 9.523111111111106,
+      "avg_comfort": 9.452148148148144,
+      "avg_location": 9.073481481481473
+    }
+  },
+  {
+    "hotel_name": "Berlin Mitte Elite",
+    "city": "Berlin",
+    "country": "Germany",
+    "star_rating": 5.0,
+    "traveller_type": "Family",
+    "review_text": "We recently stayed at the Berlin Mitte Elite during our family trip to Berlin, and overall, it was a fantastic experience. The cleanliness of the hotel truly stood out; everything was spotless, which is always a big plus when traveling with kids. The comfort level was impressive, making it easy for us to relax after a long day of exploring the city. \n\nThe location was decent, not too far from major attractions, but we did find ourselves taking some longer walks or public transport to get to the heart of the action. The staff were really nice, always ready to help with a smile. We felt well taken care of during our stay, which made our family trip all the more enjoyable. Overall, it’s a great choice if you’re looking for a family-friendly spot in Berlin!",
+    "metadata": {
+      "avg_overall": 9.11509433962265,
+      "avg_cleanliness": 9.508805031446544,
+      "avg_comfort": 9.127044025157236,
+      "avg_location": 8.763102725366874
+    }
+  },
+  {
+    "hotel_name": "Berlin Mitte Elite",
+    "city": "Berlin",
+    "country": "Germany",
+    "star_rating": 5.0,
+    "traveller_type": "Solo",
+    "review_text": "I recently stayed at the Berlin Mitte Elite while exploring this vibrant city solo, and I have to say, it was a fantastic experience! The location couldn’t be better—right in the heart of Mitte, I was just a short stroll away from all the major sights. The staff were incredibly welcoming and attentive, making me feel right at home. I also loved my room; it was really nice, cozy, and clean, which made my stay even more enjoyable. The facilities were impressive too, especially the spa area which was perfect for unwinding after a day of sightseeing. Overall, I had a wonderful time, and I would definitely recommend this hotel to fellow travelers!",
+    "metadata": {
+      "avg_overall": 9.012135922330106,
+      "avg_cleanliness": 8.89053398058252,
+      "avg_comfort": 8.851456310679616,
+      "avg_location": 9.076699029126214
+    }
+  },
+  {
+    "hotel_name": "Canal House Grand",
+    "city": "Amsterdam",
+    "country": "Netherlands",
+    "star_rating": 5.0,
+    "traveller_type": "Business",
+    "review_text": "I recently stayed at the Canal House Grand while on a business trip to Amsterdam, and it was fantastic! The location couldn’t be better—right by the canals, making it really easy for me to explore the area during my downtime. The facilities were impressive; I loved the cozy lounge area where I could unwind after a long day of meetings. The staff were incredibly friendly and attentive, making me feel welcome from the moment I arrived. My room was very comfortable and clean, though I noticed a few spots that could use a bit more attention. Overall, I had a great experience and would definitely return for my next visit to the city!",
+    "metadata": {
+      "avg_overall": 8.964347826086952,
+      "avg_cleanliness": 8.657826086956527,
+      "avg_comfort": 8.784130434782611,
+      "avg_location": 9.690217391304358
+    }
+  },
+  {
+    "hotel_name": "Canal House Grand",
+    "city": "Amsterdam",
+    "country": "Netherlands",
+    "star_rating": 5.0,
+    "traveller_type": "Couple",
+    "review_text": "We recently stayed at the Canal House Grand during our trip to Amsterdam, and overall, it was a fantastic experience. The location was perfect, right by the canals, making it easy for us to explore the city on foot. The hotel itself was spotless, and we really appreciated the attention to cleanliness—it felt like we were in a well-cared-for space. \n\nThe staff was friendly and accommodating, though we found that occasionally they seemed a bit overwhelmed during peak hours, which led to a wait at the check-in counter. The facilities were quite nice, though we expected a bit more from a five-star hotel—maybe a spa or a pool would have taken it over the top. Still, we enjoyed our stay and would definitely recommend it for those looking for a charming and elegant base in Amsterdam.",
+    "metadata": {
+      "avg_overall": 9.09698890649762,
+      "avg_cleanliness": 9.576545166402532,
+      "avg_comfort": 9.396671949286855,
+      "avg_location": 9.432963549920766
+    }
+  },
+  {
+    "hotel_name": "Canal House Grand",
+    "city": "Amsterdam",
+    "country": "Netherlands",
+    "star_rating": 5.0,
+    "traveller_type": "Family",
+    "review_text": "We recently stayed at Canal House Grand during our family trip to Amsterdam, and it was a fantastic experience overall. The hotel's cleanliness stood out right away; everything felt spotless, which is a huge plus when traveling with kids. The location was also impressive, making it easy for us to explore the city on foot. \n\nThe staff were friendly and accommodating, helping us with recommendations for family-friendly activities. Our room was really nice, providing plenty of comfort after long days of sightseeing. While the value for money was good, I wished a bit more came included in the room rate, but that’s minor given all the positives. Overall, we had a great time and would definitely consider returning!",
+    "metadata": {
+      "avg_overall": 9.196171171171166,
+      "avg_cleanliness": 9.573873873873879,
+      "avg_comfort": 9.063288288288295,
+      "avg_location": 9.099549549549554
+    }
+  },
+  {
+    "hotel_name": "Canal House Grand",
+    "city": "Amsterdam",
+    "country": "Netherlands",
+    "star_rating": 5.0,
+    "traveller_type": "Solo",
+    "review_text": "I recently stayed at Canal House Grand in Amsterdam, and I can't stop raving about it! The location is just perfect, right by the waterways and close to everything you’d want to see. My room was absolutely spotless and so comfortable; I felt right at home after a long day of exploring the city. The staff were incredibly friendly and went out of their way to make my stay special. I also loved the beautiful decor throughout the hotel—it's such a charming place! If you're a solo traveler like me, this hotel is a fantastic choice for a cozy and memorable stay in Amsterdam. Can’t wait to come back!",
+    "metadata": {
+      "avg_overall": 9.108454106280206,
+      "avg_cleanliness": 8.96811594202898,
+      "avg_comfort": 8.756521739130429,
+      "avg_location": 9.427777777777777
+    }
+  },
+  {
+    "hotel_name": "Colosseum Gardens",
+    "city": "Rome",
+    "country": "Italy",
+    "star_rating": 5.0,
+    "traveller_type": "Business",
+    "review_text": "As a business traveler, I recently stayed at Colosseum Gardens in Rome and overall, it was a really nice experience. The location is absolutely fantastic—just a stone's throw from the Colosseum, making it easy to explore the city during my downtime. The facilities were impressive too; everything I needed for a productive stay was right there. \n\nThe staff was genuinely friendly and attentive, which made a big difference. I did find the cleanliness could be a bit better in some areas, but it was still acceptable. The comfort of the room was great, allowing me to unwind after long days of meetings. All in all, I’d say it’s a solid choice for anyone traveling for work in Rome!",
+    "metadata": {
+      "avg_overall": 8.906683168316825,
+      "avg_cleanliness": 8.534653465346539,
+      "avg_comfort": 8.772772277227721,
+      "avg_location": 9.789356435643555
+    }
+  },
+  {
+    "hotel_name": "Colosseum Gardens",
+    "city": "Rome",
+    "country": "Italy",
+    "star_rating": 5.0,
+    "traveller_type": "Couple",
+    "review_text": "We recently stayed at Colosseum Gardens during our trip to Rome, and it was quite the experience. The location is absolutely fantastic, just a short stroll from the Colosseum and other iconic sites. We loved waking up to such stunning views! The cleanliness was impressive, everything felt spotless and well-maintained, which gave us peace of mind. \n\nHowever, while the staff was friendly and accommodating, we found a few areas where they could improve their attentiveness. Additionally, the facilities were nice but didn’t quite match the luxury vibe we expected. Overall, we had a lovely stay and would recommend it for anyone looking to enjoy the heart of Rome!",
+    "metadata": {
+      "avg_overall": 9.045739910313912,
+      "avg_cleanliness": 9.450224215246639,
+      "avg_comfort": 9.388490284005977,
+      "avg_location": 9.563677130044832
+    }
+  },
+  {
+    "hotel_name": "Colosseum Gardens",
+    "city": "Rome",
+    "country": "Italy",
+    "star_rating": 5.0,
+    "traveller_type": "Family",
+    "review_text": "We just returned from a family trip to Rome and stayed at Colosseum Gardens. Overall, we had an amazing experience! The location is fantastic—just a short walk from the Colosseum, which was perfect for our kids who were so excited to see it up close. The rooms were impressive, offering great comfort after our long days exploring the city.  \n\nThe cleanliness was spot on; I felt completely at ease letting the kids roam around. The staff was very friendly and helpful, always ready to offer tips about nearby attractions. The only downside was that the value for money could be a little better, especially during peak season. Still, I’d definitely recommend this hotel for families looking for a memorable stay in Rome!",
+    "metadata": {
+      "avg_overall": 9.140961538461527,
+      "avg_cleanliness": 9.453461538461534,
+      "avg_comfort": 9.046346153846153,
+      "avg_location": 9.277307692307692
+    }
+  },
+  {
+    "hotel_name": "Colosseum Gardens",
+    "city": "Rome",
+    "country": "Italy",
+    "star_rating": 5.0,
+    "traveller_type": "Solo",
+    "review_text": "I recently stayed at Colosseum Gardens during my solo adventure in Rome, and I can’t recommend it enough! The location is just fantastic—literally a stone's throw from the Colosseum, which made exploring the city so easy. The staff were incredibly friendly and attentive, always ready to help with a smile, which made me feel right at home. \n\nThe room was very comfortable, providing a cozy oasis after long days of sightseeing. I appreciated how clean everything was; it felt well-maintained and inviting. Overall, this hotel truly enhanced my Roman experience, and I left feeling like I’d discovered a little gem in the heart of the city! If you’re traveling solo, this place is a must.",
+    "metadata": {
+      "avg_overall": 9.055026455026452,
+      "avg_cleanliness": 8.859259259259257,
+      "avg_comfort": 8.779100529100537,
+      "avg_location": 9.557407407407402
+    }
+  },
+  {
+    "hotel_name": "Copacabana Lux",
+    "city": "Rio de Janeiro",
+    "country": "Brazil",
+    "star_rating": 5.0,
+    "traveller_type": "Business",
+    "review_text": "I recently stayed at the Copacabana Lux during a business trip to Rio, and overall, it was a really nice experience. The location is fantastic—just steps away from the beach, which was perfect for unwinding after long meetings. The staff were incredibly attentive and friendly, making my stay feel warm and welcoming. \n\nThe facilities were very good; I enjoyed the gym and the rooftop pool, which offered stunning views of the ocean. However, I did find the cleanliness to be a bit inconsistent; while the common areas were well-kept, my room could have used a little more attention. Overall, I'd say it’s a solid choice for business travelers looking for comfort and convenience in a vibrant area.",
+    "metadata": {
+      "avg_overall": 8.738422391857515,
+      "avg_cleanliness": 8.398218829516548,
+      "avg_comfort": 8.512468193384228,
+      "avg_location": 9.6473282442748
+    }
+  },
+  {
+    "hotel_name": "Copacabana Lux",
+    "city": "Rio de Janeiro",
+    "country": "Brazil",
+    "star_rating": 5.0,
+    "traveller_type": "Couple",
+    "review_text": "We just returned from a lovely stay at Copacabana Lux and overall, it was a great experience. The location is fantastic—right by the beach, so we spent our days soaking up the sun and enjoying the vibrant atmosphere. The cleanliness of the hotel was impressive; our room was spotless, which really enhanced our comfort during our stay. \n\nThe staff were friendly and helpful, although a bit more attentiveness at times would have made our visits to the restaurant even better. While the facilities were nice, we felt they could use a little upgrade to match the overall vibe of this beautiful hotel. Still, it was a memorable trip and we left with lovely memories of Rio!",
+    "metadata": {
+      "avg_overall": 8.862947067238908,
+      "avg_cleanliness": 9.276680972818301,
+      "avg_comfort": 9.107439198855523,
+      "avg_location": 9.344206008583697
+    }
+  },
+  {
+    "hotel_name": "Copacabana Lux",
+    "city": "Rio de Janeiro",
+    "country": "Brazil",
+    "star_rating": 5.0,
+    "traveller_type": "Family",
+    "review_text": "My family and I recently stayed at Copacabana Lux and overall, we had an amazing time! The location couldn’t be better—just a short walk from the beach, which was perfect for our kids who love the sand. The hotel itself was spotless, and we appreciated how well-maintained everything was. Our room was very comfortable, though it could have been a bit more spacious for our family of four. The staff were friendly and attentive, making sure we felt welcomed throughout our stay. The only downside was that while the facilities were impressive, some areas felt a bit crowded during peak hours. Still, we left with great memories and would definitely consider coming back!",
+    "metadata": {
+      "avg_overall": 8.975053763440854,
+      "avg_cleanliness": 9.310967741935487,
+      "avg_comfort": 8.791397849462372,
+      "avg_location": 9.048602150537622
+    }
+  },
+  {
+    "hotel_name": "Copacabana Lux",
+    "city": "Rio de Janeiro",
+    "country": "Brazil",
+    "star_rating": 5.0,
+    "traveller_type": "Solo",
+    "review_text": "I recently stayed at Copacabana Lux while exploring Rio, and I had a fantastic experience! The location is unbeatable—right by the beach, making it so easy to soak up the sun or stroll along the famous coastline. The staff went above and beyond to make me feel welcome, always ready to help with tips on what to see and do. The room was very good, offering a comfortable retreat after a long day of sightseeing. I appreciated how clean and well-maintained everything was; it really enhanced my stay. Overall, it was an amazing value for a 5-star hotel, and I would definitely recommend it to other solo travelers looking for a great spot in Rio!",
+    "metadata": {
+      "avg_overall": 8.884938271604936,
+      "avg_cleanliness": 8.700493827160493,
+      "avg_comfort": 8.483703703703702,
+      "avg_location": 9.319506172839516
+    }
+  },
+  {
+    "hotel_name": "Gaudi's Retreat",
+    "city": "Barcelona",
+    "country": "Spain",
+    "star_rating": 5.0,
+    "traveller_type": "Business",
+    "review_text": "I recently stayed at Gaudi's Retreat during a business trip to Barcelona, and I have to say, it was a really nice experience. The location is absolutely fantastic—right in the heart of the city, making it super easy to get to meetings and explore a bit in my downtime. The staff were incredibly friendly and attentive, which definitely made my stay more enjoyable. \n\nThe facilities were also impressive; I loved the sleek design of the common areas. My room was comfortable and clean, though I did notice it could use a little more attention in some corners. Overall, I would recommend this hotel for any business traveler looking for convenience and a touch of luxury in Barcelona.",
+    "metadata": {
+      "avg_overall": 8.904545454545453,
+      "avg_cleanliness": 8.554772727272734,
+      "avg_comfort": 8.754318181818183,
+      "avg_location": 9.753409090909086
+    }
+  },
+  {
+    "hotel_name": "Gaudi's Retreat",
+    "city": "Barcelona",
+    "country": "Spain",
+    "star_rating": 5.0,
+    "traveller_type": "Couple",
+    "review_text": "We recently spent a week at Gaudi's Retreat in Barcelona, and it was truly fantastic! From the moment we arrived, we were impressed by how spotless everything was. Our room was not only comfortable but also beautifully designed, making it a perfect romantic getaway. The location couldn't be better, with so many attractions just a short walk away. \n\nWhile the facilities were good, we felt they could be a bit more extensive, but we didn't mind since we spent most of our time exploring the city. The staff were very friendly and accommodating, adding to the overall pleasant experience. For us, Gaudi's Retreat was a wonderful base for our adventures in Barcelona, and we would definitely recommend it to other couples looking for a charming stay!",
+    "metadata": {
+      "avg_overall": 9.0432,
+      "avg_cleanliness": 9.452133333333336,
+      "avg_comfort": 9.376399999999997,
+      "avg_location": 9.502266666666674
+    }
+  },
+  {
+    "hotel_name": "Gaudi's Retreat",
+    "city": "Barcelona",
+    "country": "Spain",
+    "star_rating": 5.0,
+    "traveller_type": "Family",
+    "review_text": "Our family had an amazing stay at Gaudi's Retreat in Barcelona. The location was perfect, just a short walk from some of the city's most iconic sights, which made exploring with the kids a breeze. The hotel itself was spotless, and we really appreciated the spacious room—plenty of space for our family to relax after a day of sightseeing. The staff was also very good, always ready to help with a smile and provide great recommendations. The only slight downside was the value for money; while it was a bit on the pricey side, the overall experience made it worth it. We left with wonderful memories and would definitely come back!",
+    "metadata": {
+      "avg_overall": 9.138815789473682,
+      "avg_cleanliness": 9.44649122807018,
+      "avg_comfort": 9.076315789473677,
+      "avg_location": 9.169736842105248
+    }
+  },
+  {
+    "hotel_name": "Gaudi's Retreat",
+    "city": "Barcelona",
+    "country": "Spain",
+    "star_rating": 5.0,
+    "traveller_type": "Solo",
+    "review_text": "I recently stayed at Gaudi's Retreat while exploring Barcelona solo, and I had a fantastic experience overall. The location is unbeatable—just a stone's throw from La Sagrada Familia and other key sites. I couldn't have asked for a better spot to dive into the city's vibrant culture. \n\nThe staff were incredibly friendly and attentive, making me feel right at home. My room was comfortable, with a cozy atmosphere that was perfect for unwinding after a long day of sightseeing. Although I found some areas to be a bit less than spotless, the overall cleanliness was still very good. \n\nIf you're looking for a special place to stay in Barcelona, I'd say Gaudi's Retreat is a great choice!",
+    "metadata": {
+      "avg_overall": 9.053944020356244,
+      "avg_cleanliness": 8.84325699745547,
+      "avg_comfort": 8.780407124681943,
+      "avg_location": 9.484478371501273
+    }
+  },
+  {
+    "hotel_name": "Han River Oasis",
+    "city": "Seoul",
+    "country": "South Korea",
+    "star_rating": 5.0,
+    "traveller_type": "Business",
+    "review_text": "I recently stayed at Han River Oasis during a business trip to Seoul, and overall, it was a really nice experience. The location is fantastic—just steps away from key business districts and lovely riverside walks. I found the staff to be incredibly attentive and friendly, always ready to help with a smile, which made my stay feel more personal. The facilities were impressive too; the gym was well-equipped, and I appreciated the quiet spaces to work when I needed them. \n\nThe room was comfortable, providing a relaxing retreat after busy days, although I felt the value for money could be a bit better, considering the overall experience. Still, I would definitely return on my next trip!",
+    "metadata": {
+      "avg_overall": 8.881710213776719,
+      "avg_cleanliness": 8.610688836104504,
+      "avg_comfort": 8.966033254156766,
+      "avg_location": 9.228741092636582
+    }
+  },
+  {
+    "hotel_name": "Han River Oasis",
+    "city": "Seoul",
+    "country": "South Korea",
+    "star_rating": 5.0,
+    "traveller_type": "Couple",
+    "review_text": "We just returned from the Han River Oasis, and wow, what an incredible stay! From the moment we arrived, the staff made us feel so welcome and took care of everything we needed. The cleanliness was impressive—everything felt spotless, which really added to the overall experience. \n\nWe loved our room; it was super comfortable and had a fantastic view of the Han River. The location was great too, making it easy for us to explore the nearby attractions and enjoy some lovely walks along the river. \n\nWhile the facilities were good, we thought a few more amenities would have been nice, but that didn’t take away from our wonderful time. We can't wait to come back!",
+    "metadata": {
+      "avg_overall": 9.017421124828527,
+      "avg_cleanliness": 9.51303155006859,
+      "avg_comfort": 9.580658436214003,
+      "avg_location": 8.922908093278457
+    }
+  },
+  {
+    "hotel_name": "Han River Oasis",
+    "city": "Seoul",
+    "country": "South Korea",
+    "star_rating": 5.0,
+    "traveller_type": "Family",
+    "review_text": "We recently stayed at Han River Oasis during our family trip to Seoul, and overall, it was a fantastic experience. The hotel was spotless, and I was particularly impressed with the comfort of our room. After long days of exploring the city, it was a relief to come back to such a cozy space. The amenities were also really nice; the kids loved the pool area, which was perfect for unwinding. \n\nThe location was decent, but we found ourselves walking a bit to reach some of the main attractions. However, the staff were incredibly friendly and helpful, making us feel welcomed throughout our stay. I’d say it’s definitely a great choice for families looking for a relaxing escape in the bustling city!",
+    "metadata": {
+      "avg_overall": 9.128628230616307,
+      "avg_cleanliness": 9.514910536779327,
+      "avg_comfort": 9.2868787276342,
+      "avg_location": 8.623459244532802
+    }
+  },
+  {
+    "hotel_name": "Han River Oasis",
+    "city": "Seoul",
+    "country": "South Korea",
+    "star_rating": 5.0,
+    "traveller_type": "Solo",
+    "review_text": "I recently stayed at the Han River Oasis during my solo trip to Seoul, and I have to say it was amazing. The staff were incredibly welcoming and attentive, making me feel right at home from the moment I arrived. The room was spotless and oh-so-comfortable, perfect for relaxing after a day of exploring the city. I also loved the location; it was close to public transport and some great local eateries. The only minor hiccup was that some of the facilities could use a little updating, but overall, it was a very good experience. For the price, I felt I got excellent value, and I’d definitely recommend it to other solo travelers looking for a peaceful retreat in the heart of the city.",
+    "metadata": {
+      "avg_overall": 9.018181818181812,
+      "avg_cleanliness": 8.899521531100483,
+      "avg_comfort": 8.972009569377988,
+      "avg_location": 8.912200956937806
+    }
+  },
+  {
+    "hotel_name": "Kremlin Suites",
+    "city": "Moscow",
+    "country": "Russia",
+    "star_rating": 5.0,
+    "traveller_type": "Business",
+    "review_text": "I recently stayed at Kremlin Suites during a business trip, and overall, it was a very good experience. The location is fantastic, just a stone's throw from the Kremlin, which made it easy to navigate between meetings. The facilities were impressive, offering everything I needed to stay productive. \n\nThe comfort of the rooms was also noteworthy; I slept well and appreciated the thoughtful touches that made my stay more enjoyable. However, while the cleanliness was acceptable, I did notice a few areas that could use a little more attention. \n\nThe staff were friendly and accommodating, making me feel welcomed. While the price might be a bit on the higher side, the overall experience made it worth it. I would recommend it for anyone needing a solid base for business in Moscow.",
+    "metadata": {
+      "avg_overall": 8.83691275167785,
+      "avg_cleanliness": 8.466666666666669,
+      "avg_comfort": 8.911633109619686,
+      "avg_location": 9.304474272930639
+    }
+  },
+  {
+    "hotel_name": "Kremlin Suites",
+    "city": "Moscow",
+    "country": "Russia",
+    "star_rating": 5.0,
+    "traveller_type": "Couple",
+    "review_text": "We recently stayed at Kremlin Suites during our trip to Moscow, and overall, it was a fantastic experience. The location couldn't be better—just a short walk to the Kremlin and Red Square, which made exploring the city so easy. Our room was impressively clean and incredibly comfortable; we felt right at home from the moment we arrived. The staff was friendly and helpful, but there were times when we had to wait a bit longer for assistance, which was a slight downside. The facilities were decent, though I’d say they could use a little upgrading to match the stunning ambiance of the hotel. All in all, we had a wonderful time and would highly recommend it to anyone looking for a cozy stay in such an iconic city!",
+    "metadata": {
+      "avg_overall": 8.960246533127886,
+      "avg_cleanliness": 9.369645608628662,
+      "avg_comfort": 9.51633281972266,
+      "avg_location": 8.99352850539292
+    }
+  },
+  {
+    "hotel_name": "Kremlin Suites",
+    "city": "Moscow",
+    "country": "Russia",
+    "star_rating": 5.0,
+    "traveller_type": "Family",
+    "review_text": "We recently stayed at Kremlin Suites during our family trip to Moscow, and it was fantastic! The hotel was spotless, making it so easy to relax after a long day of exploring. Our kids particularly loved the spacious rooms, which were super comfortable and made us feel right at home. The facilities were really nice, with plenty of options to keep everyone entertained. Plus, the staff went above and beyond to ensure we had everything we needed. The location was pretty good, too—close enough to all the major sights but still in a quiet area. Overall, we left with great memories and would definitely recommend this place to other families!",
+    "metadata": {
+      "avg_overall": 9.084615384615377,
+      "avg_cleanliness": 9.374786324786324,
+      "avg_comfort": 9.221794871794863,
+      "avg_location": 8.694017094017099
+    }
+  },
+  {
+    "hotel_name": "Kremlin Suites",
+    "city": "Moscow",
+    "country": "Russia",
+    "star_rating": 5.0,
+    "traveller_type": "Solo",
+    "review_text": "I recently stayed at Kremlin Suites during my solo trip to Moscow, and I have to say, it was fantastic! The location couldn’t be better; I was just a short walk from the Kremlin and Red Square, making it super easy to explore everything. The staff were incredibly welcoming, always ready with a smile and great recommendations for local spots. \n\nThe room was really nice—comfortable, clean, and with a lovely view of the city. I felt right at home. Plus, the value for money is impressive, especially for a five-star place. If you're traveling solo and looking for a cozy yet luxurious stay, I can't recommend this hotel enough!",
+    "metadata": {
+      "avg_overall": 8.98522167487684,
+      "avg_cleanliness": 8.76403940886699,
+      "avg_comfort": 8.92783251231527,
+      "avg_location": 9.002463054187192
+    }
+  },
+  {
+    "hotel_name": "Kyo-to Grand",
+    "city": "Tokyo",
+    "country": "Japan",
+    "star_rating": 5.0,
+    "traveller_type": "Business",
+    "review_text": "I recently stayed at the Kyo-to Grand during a business trip to Tokyo, and I have to say, it was a great experience overall. The location is fantastic, making it easy to get to meetings and explore the city a bit in my downtime. The staff were incredibly friendly and attentive, which really made a difference—I felt welcomed from the moment I arrived. \n\nThe facilities were impressive too, with a well-equipped gym and a lovely lounge area where I could unwind after a long day. My room was comfortable and clean, though not quite as spacious as I had hoped. Still, for a busy traveler like me, it ticked all the right boxes. Definitely a solid choice for anyone visiting Tokyo!",
+    "metadata": {
+      "avg_overall": 8.834643734643736,
+      "avg_cleanliness": 8.813513513513515,
+      "avg_comfort": 8.7002457002457,
+      "avg_location": 8.953808353808347
+    }
+  },
+  {
+    "hotel_name": "Kyo-to Grand",
+    "city": "Tokyo",
+    "country": "Japan",
+    "star_rating": 5.0,
+    "traveller_type": "Couple",
+    "review_text": "We recently stayed at Kyo-to Grand during our trip to Tokyo, and overall, it was an amazing experience. The cleanliness of the hotel was impressive; every corner felt spotless, making us feel right at home. Our room was incredibly comfortable, with a cozy bed that made it hard to get up in the mornings! \n\nWhile the facilities were very good, we did find some areas that could use a little updating. The location was decent, not the very center of everything, but still close enough to explore. The staff were a highlight, always friendly and attentive, which added to the wonderful atmosphere. All in all, we really enjoyed our stay, even if we felt it was a bit pricey for what you get. But hey, it's Tokyo!",
+    "metadata": {
+      "avg_overall": 8.961445783132515,
+      "avg_cleanliness": 9.70496987951807,
+      "avg_comfort": 9.297289156626517,
+      "avg_location": 8.664156626506012
+    }
+  },
+  {
+    "hotel_name": "Kyo-to Grand",
+    "city": "Tokyo",
+    "country": "Japan",
+    "star_rating": 5.0,
+    "traveller_type": "Family",
+    "review_text": "We just returned from an unforgettable family trip to Tokyo, and our stay at Kyo-to Grand was absolutely fantastic! The moment we walked in, we were welcomed by the friendly staff, who made us feel right at home. The hotel was spotless, and we loved how comfortable our room was. It was perfect for unwinding after a long day of exploring the city. \n\nThe facilities were impressive, too! Our kids had a blast at the pool, and the dining options were delightful, providing a taste of local cuisine. While the location was a bit farther from some main attractions, we found it to be a nice, quiet area to retreat to after our adventures. This place really made our family trip special, and we can't wait to return!",
+    "metadata": {
+      "avg_overall": 9.090495867768588,
+      "avg_cleanliness": 9.688223140495865,
+      "avg_comfort": 8.990702479338843,
+      "avg_location": 8.36673553719008
+    }
+  },
+  {
+    "hotel_name": "Kyo-to Grand",
+    "city": "Tokyo",
+    "country": "Japan",
+    "star_rating": 5.0,
+    "traveller_type": "Solo",
+    "review_text": "I recently stayed at Kyo-to Grand during my solo trip to Tokyo, and I have to say, it was a fantastic experience! The staff were incredibly welcoming and attentive, making me feel right at home. The cleanliness of the hotel was impressive, with my room being spotless every day. I also loved the facilities; the gym was well-equipped, and the on-site restaurant had some delicious options.\n\nThe location was pretty good too, although I did have to walk a bit to reach the nearest subway station. Still, it was a nice way to explore the area. Overall, I felt I got great value for my money, especially considering the level of service and comfort provided. I highly recommend this hotel for anyone traveling solo!",
+    "metadata": {
+      "avg_overall": 8.973317307692312,
+      "avg_cleanliness": 9.125240384615394,
+      "avg_comfort": 8.69519230769231,
+      "avg_location": 8.639423076923077
+    }
+  },
+  {
+    "hotel_name": "L'Étoile Palace",
+    "city": "Paris",
+    "country": "France",
+    "star_rating": 5.0,
+    "traveller_type": "Business",
+    "review_text": "I recently stayed at L'Étoile Palace while on a business trip to Paris, and I have to say, it was such a delightful experience! The location is absolutely unbeatable—just a stone's throw from the iconic sights, making it super convenient for meetings and a bit of sightseeing in between. The staff were incredibly attentive and friendly, always going the extra mile to ensure my stay was enjoyable. \n\nThe room was really nice—comfortable and well-appointed, giving me a perfect space to unwind after a long day of meetings. While the cleanliness was generally good, I did notice a few areas that could use a bit more attention. Overall, I found the value for money to be decent given the fantastic experience I had. I can’t wait to return!",
+    "metadata": {
+      "avg_overall": 8.83277511961723,
+      "avg_cleanliness": 8.256698564593304,
+      "avg_comfort": 8.985167464114829,
+      "avg_location": 9.671291866028703
+    }
+  },
+  {
+    "hotel_name": "L'Étoile Palace",
+    "city": "Paris",
+    "country": "France",
+    "star_rating": 5.0,
+    "traveller_type": "Couple",
+    "review_text": "We just returned from a romantic getaway at L'Étoile Palace in Paris, and wow, what an experience! The location is fantastic—just a short stroll to the Eiffel Tower, which made our evening walks so special. The hotel itself was spotless, and we loved how comfortable our room was; it felt like a little haven after a day of exploring the city. \n\nWhile the facilities were very good, we did wish the fitness center was a bit larger, but honestly, we spent most of our time enjoying the Parisian charm outside. The staff were friendly and attentive, making us feel right at home. Overall, it was an amazing stay, and we can’t wait to come back!",
+    "metadata": {
+      "avg_overall": 8.951400560224087,
+      "avg_cleanliness": 9.17366946778711,
+      "avg_comfort": 9.564565826330542,
+      "avg_location": 9.418067226890757
+    }
+  },
+  {
+    "hotel_name": "L'Étoile Palace",
+    "city": "Paris",
+    "country": "France",
+    "star_rating": 5.0,
+    "traveller_type": "Family",
+    "review_text": "We just got back from an unforgettable family trip to Paris, and staying at L'Étoile Palace made it even more special! The hotel is absolutely fantastic, with spotless rooms that felt like a cozy retreat after long days of exploring. The kids loved the facilities, and we appreciated the little touches that made our stay so comfortable. Plus, the location is perfect for wandering around the city and soaking in the sights. What truly stood out was the staff; they were incredibly friendly and went above and beyond to make sure our family felt welcome. Overall, this place offered great value for our Parisian adventure, and we can’t wait to come back!",
+    "metadata": {
+      "avg_overall": 9.036673773987216,
+      "avg_cleanliness": 9.161620469083152,
+      "avg_comfort": 9.26950959488273,
+      "avg_location": 9.11982942430703
+    }
+  },
+  {
+    "hotel_name": "L'Étoile Palace",
+    "city": "Paris",
+    "country": "France",
+    "star_rating": 5.0,
+    "traveller_type": "Solo",
+    "review_text": "I recently stayed at L'Étoile Palace during my solo trip to Paris, and I have to say, it was a fantastic experience overall. The location couldn’t be better—I was just a short stroll from the Champs-Élysées and all the vibrant Parisian life. The staff were so friendly and attentive, really making me feel welcome and taken care of, which is a huge plus for a solo traveler like me. \n\nThe room was comfortable and stylish, although I did notice a little dust in the corners that could have been addressed. Still, the overall ambiance was lovely, making it easy to relax after a day of exploring. While the price was on the higher side, the value felt just about right given the great service and perfect location. I’d definitely recommend it to anyone looking for a nice stay in the heart of the city!",
+    "metadata": {
+      "avg_overall": 8.953826530612249,
+      "avg_cleanliness": 8.548469387755096,
+      "avg_comfort": 8.978061224489803,
+      "avg_location": 9.44591836734694
+    }
+  },
+  {
+    "hotel_name": "Marina Bay Zenith",
+    "city": "Singapore",
+    "country": "Singapore",
+    "star_rating": 5.0,
+    "traveller_type": "Business",
+    "review_text": "I recently stayed at Marina Bay Zenith during a business trip to Singapore, and I have to say, the location is fantastic—right in the heart of everything. It made getting to meetings a breeze. The facilities are also really impressive; the gym was well-equipped, and the business center was super convenient for getting work done in between engagements. I did find the cleanliness to be good but a bit lacking in some areas, which was a minor letdown in an otherwise great experience. The staff were friendly and attentive, always ready to help. However, given the overall experience, I felt the value for money could be better. Still, I’d definitely consider staying here again for the next trip!",
+    "metadata": {
+      "avg_overall": 8.94447174447175,
+      "avg_cleanliness": 8.544717444717442,
+      "avg_comfort": 8.771007371007375,
+      "avg_location": 9.744226044226043
+    }
+  },
+  {
+    "hotel_name": "Marina Bay Zenith",
+    "city": "Singapore",
+    "country": "Singapore",
+    "star_rating": 5.0,
+    "traveller_type": "Couple",
+    "review_text": "We recently stayed at Marina Bay Zenith during our trip to Singapore, and we were really impressed! The location is fantastic—right by the beautiful marina, making it easy to explore the city and enjoy stunning views. Our room was spotless and incredibly comfortable, perfect for unwinding after a day of sightseeing. The staff were very good, always ready to help with a smile, which added to the warm atmosphere. \n\nWe did find the facilities a bit lacking compared to what we expected from a five-star hotel, but overall, it was a wonderful experience. We definitely felt we got good value for money, considering the prime location and level of comfort. All in all, this place is a gem for couples looking to enjoy a romantic getaway in Singapore!",
+    "metadata": {
+      "avg_overall": 9.04757142857142,
+      "avg_cleanliness": 9.451142857142855,
+      "avg_comfort": 9.372857142857148,
+      "avg_location": 9.497999999999992
+    }
+  },
+  {
+    "hotel_name": "Marina Bay Zenith",
+    "city": "Singapore",
+    "country": "Singapore",
+    "star_rating": 5.0,
+    "traveller_type": "Family",
+    "review_text": "We just got back from an incredible family trip to Singapore and our stay at Marina Bay Zenith was absolutely fantastic! The moment we stepped in, the cleanliness hit us—it was spotless! Our kids loved the amenities, especially the pool area, which was a hit after long days of exploring the city. The staff was very friendly and always ready to help, making us feel right at home. Plus, the location is perfect; we were just a stone's throw from all the major attractions. The only thing I’d say is that while it was a bit on the pricier side, the experience was worth every penny. We can’t wait to come back!",
+    "metadata": {
+      "avg_overall": 9.153118279569888,
+      "avg_cleanliness": 9.453763440860211,
+      "avg_comfort": 9.060430107526884,
+      "avg_location": 9.163010752688175
+    }
+  },
+  {
+    "hotel_name": "Marina Bay Zenith",
+    "city": "Singapore",
+    "country": "Singapore",
+    "star_rating": 5.0,
+    "traveller_type": "Solo",
+    "review_text": "I recently spent a few days at Marina Bay Zenith while exploring Singapore, and I must say, it was a fantastic experience! The location is unbeatable, right by the waterfront, making it super easy to hop over to all the main attractions. The staff were incredibly friendly and attentive, which made me feel really welcomed as a solo traveler. \n\nOne of the highlights was the impressive facilities, especially the pool area, where I enjoyed some relaxing afternoons. The room was very comfortable and clean, providing a lovely oasis after a day of sightseeing. Overall, I left feeling satisfied and eager to return. Definitely a great choice for anyone traveling solo!",
+    "metadata": {
+      "avg_overall": 9.058916478555295,
+      "avg_cleanliness": 8.839729119638823,
+      "avg_comfort": 8.775395033860041,
+      "avg_location": 9.472234762979689
+    }
+  },
+  {
+    "hotel_name": "Nile Grandeur",
+    "city": "Cairo",
+    "country": "Egypt",
+    "star_rating": 5.0,
+    "traveller_type": "Business",
+    "review_text": "I recently stayed at the Nile Grandeur during a business trip to Cairo, and I have to say, the location is just fantastic. Being so close to the Nile made my downtime really enjoyable, with beautiful views right at my doorstep. The staff were also very good—super friendly and attentive, making sure everything went smoothly during my stay. \n\nThe room was comfortable and well-appointed, which was a relief after long days of meetings. While I had a great experience overall, I did feel like the value for money could have been a little better, especially with some of the amenities. But all in all, I enjoyed my time there and would recommend it for business travelers looking for a solid place to stay!",
+    "metadata": {
+      "avg_overall": 8.644700460829487,
+      "avg_cleanliness": 8.280184331797251,
+      "avg_comfort": 8.508986175115197,
+      "avg_location": 9.356912442396315
+    }
+  },
+  {
+    "hotel_name": "Nile Grandeur",
+    "city": "Cairo",
+    "country": "Egypt",
+    "star_rating": 5.0,
+    "traveller_type": "Couple",
+    "review_text": "We recently stayed at the Nile Grandeur in Cairo, and it was such a delightful experience! The location is fantastic, right by the Nile and close to all the major attractions, which made our daily explorations easy and enjoyable. The cleanliness of the hotel was impressive; our room was spotless, and it felt so inviting after a long day of sightseeing. The staff was really nice and always eager to help, which added to the overall welcoming atmosphere. While the facilities were good, we felt they could use a bit of sprucing up, but it didn’t take away from our stay. All in all, we left with wonderful memories and would definitely recommend it to other couples looking for a romantic getaway!",
+    "metadata": {
+      "avg_overall": 8.752941176470593,
+      "avg_cleanliness": 9.166711229946518,
+      "avg_comfort": 9.107352941176469,
+      "avg_location": 9.042647058823537
+    }
+  },
+  {
+    "hotel_name": "Nile Grandeur",
+    "city": "Cairo",
+    "country": "Egypt",
+    "star_rating": 5.0,
+    "traveller_type": "Family",
+    "review_text": "We recently stayed at the Nile Grandeur in Cairo and it was such a fantastic experience for our family! The hotel is really nice, and the cleanliness was impressive—our room felt spotless and welcoming every time we returned. The kids loved the pool, which was perfect for cooling off after a busy day exploring the nearby pyramids. \n\nThe staff went above and beyond to make our stay enjoyable, always greeting us with warm smiles and helpful tips for our adventures. Plus, the location made it easy for us to visit many attractions without spending ages in traffic. Overall, we had a wonderful time and would definitely recommend this hotel to other families looking for a great stay in Cairo!",
+    "metadata": {
+      "avg_overall": 8.855991735537186,
+      "avg_cleanliness": 9.148966942148759,
+      "avg_comfort": 8.800413223140493,
+      "avg_location": 8.768595041322312
+    }
+  },
+  {
+    "hotel_name": "Nile Grandeur",
+    "city": "Cairo",
+    "country": "Egypt",
+    "star_rating": 5.0,
+    "traveller_type": "Solo",
+    "review_text": "I recently stayed at Nile Grandeur during my solo trip to Cairo, and I have to say, it was a really nice experience overall. The location couldn’t be better; being so close to the Nile made my morning walks absolutely magical. The staff were incredibly friendly, always ready to help with a smile, which made me feel at home right away. The facilities were decent, though I wish there were a few more options in the gym. The cleanliness was good, but there were a couple of areas that could have used a bit more attention. Still, for the price, it offered great value, and I left feeling refreshed and satisfied with my stay. I’d definitely recommend it to other solo travelers!",
+    "metadata": {
+      "avg_overall": 8.778767123287667,
+      "avg_cleanliness": 8.558447488584472,
+      "avg_comfort": 8.486529680365292,
+      "avg_location": 9.057305936073064
+    }
+  },
+  {
+    "hotel_name": "Sydney Harbour Grand",
+    "city": "Sydney",
+    "country": "Australia",
+    "star_rating": 5.0,
+    "traveller_type": "Business",
+    "review_text": "I recently stayed at the Sydney Harbour Grand for a business trip, and I have to say, the location is absolutely fantastic! Being so close to the harbor made it easy for me to unwind after long meetings. The staff were really nice, always ready to help with a smile, which made my stay even more enjoyable. The facilities were impressive, especially the gym and pool, perfect for a quick workout before heading out for the day. The only downside was that I felt the value for money could be a bit better, but the overall experience definitely made up for it. I’d happily recommend this hotel to other business travelers looking for a blend of comfort and convenience!",
+    "metadata": {
+      "avg_overall": 8.780052493438335,
+      "avg_cleanliness": 8.330971128608924,
+      "avg_comfort": 8.701837270341203,
+      "avg_location": 9.80367454068241
+    }
+  },
+  {
+    "hotel_name": "Sydney Harbour Grand",
+    "city": "Sydney",
+    "country": "Australia",
+    "star_rating": 5.0,
+    "traveller_type": "Couple",
+    "review_text": "We just returned from an unforgettable stay at the Sydney Harbour Grand, and I can't stop raving about it! The location is absolutely fantastic—right by the harbour with breathtaking views that made our morning coffee feel like a dream. The room was incredibly comfortable, with a cozy bed that we never wanted to leave. Plus, everything was spotless, which was a nice touch. \n\nThe staff was friendly and accommodating, making us feel welcome from the moment we arrived. While the facilities were good, we didn’t get a chance to make the most of them since we were too busy exploring the vibrant surroundings. Overall, it was a great experience, and we can’t wait to return!",
+    "metadata": {
+      "avg_overall": 8.899402985074634,
+      "avg_cleanliness": 9.232537313432841,
+      "avg_comfort": 9.279850746268663,
+      "avg_location": 9.567462686567163
+    }
+  },
+  {
+    "hotel_name": "Sydney Harbour Grand",
+    "city": "Sydney",
+    "country": "Australia",
+    "star_rating": 5.0,
+    "traveller_type": "Family",
+    "review_text": "We just returned from a fantastic family trip to Sydney, and staying at the Sydney Harbour Grand was definitely a highlight! The location is simply unbeatable, with stunning views of the harbor right outside our window. It made every morning feel special. The cleanliness of the hotel was impressive; everything felt spotless, which is a big deal when traveling with kids. \n\nThe staff were really nice and attentive, always ready to help with a smile, though I wish they were a bit more proactive at times. Overall, we had a wonderful experience and would highly recommend this hotel for families looking for comfort and a prime location in Sydney!",
+    "metadata": {
+      "avg_overall": 8.990191897654576,
+      "avg_cleanliness": 9.22409381663113,
+      "avg_comfort": 9.013006396588482,
+      "avg_location": 9.26162046908316
+    }
+  },
+  {
+    "hotel_name": "Sydney Harbour Grand",
+    "city": "Sydney",
+    "country": "Australia",
+    "star_rating": 5.0,
+    "traveller_type": "Solo",
+    "review_text": "I recently stayed at the Sydney Harbour Grand as a solo traveler, and overall, it was a pretty great experience. The location is absolutely fantastic—right by the water with stunning views of the Sydney Opera House. It’s perfect for someone like me who loves to explore on foot. \n\nThe staff were genuinely friendly and went out of their way to make me feel welcomed, which really adds to the whole vibe of the place. The room was comfortable, offering a nice retreat after a day of sightseeing. While the facilities were good, I felt they could use a bit of an upgrade to match the hotel's overall charm. Still, the value for money was impressive for such a prime location. I left feeling relaxed and happy with my stay!",
+    "metadata": {
+      "avg_overall": 8.914285714285713,
+      "avg_cleanliness": 8.626036866359444,
+      "avg_comfort": 8.68963133640552,
+      "avg_location": 9.555760368663586
+    }
+  },
+  {
+    "hotel_name": "Table Mountain View",
+    "city": "Cape Town",
+    "country": "South Africa",
+    "star_rating": 5.0,
+    "traveller_type": "Business",
+    "review_text": "I recently stayed at Table Mountain View during a business trip to Cape Town, and overall, it was a really nice experience. The location is absolutely fantastic, with breathtaking views of Table Mountain right from my window. It made for a great backdrop while I worked. The staff were very accommodating and genuinely friendly, which definitely added to the welcoming atmosphere.\n\nWhile the cleanliness was pretty good, I did notice a few spots that could use a bit more attention. The facilities were impressive, and the comfort of the room allowed me to unwind after long meetings. However, I felt that the value for money could be a little better considering the rate. All in all, I would recommend this place for business travelers looking for a blend of comfort and convenience in a stunning setting.",
+    "metadata": {
+      "avg_overall": 8.861640211640216,
+      "avg_cleanliness": 8.404232804232818,
+      "avg_comfort": 8.857142857142852,
+      "avg_location": 9.644444444444451
+    }
+  },
+  {
+    "hotel_name": "Table Mountain View",
+    "city": "Cape Town",
+    "country": "South Africa",
+    "star_rating": 5.0,
+    "traveller_type": "Couple",
+    "review_text": "We just wrapped up an incredible stay at Table Mountain View, and we couldn’t be happier with our experience. The location is absolutely fantastic—waking up to that stunning view of Table Mountain every morning was a dream! The room was spotless and super comfortable, making it the perfect place to relax after a day of exploring Cape Town. \n\nThe staff were really nice and attentive, always ready to help with any questions we had. While the facilities were impressive, we felt like a few more amenities could have elevated our stay even further. Overall, this hotel really made our trip special, and we can’t wait to come back!",
+    "metadata": {
+      "avg_overall": 8.970639534883718,
+      "avg_cleanliness": 9.298691860465107,
+      "avg_comfort": 9.433139534883729,
+      "avg_location": 9.346656976744187
+    }
+  },
+  {
+    "hotel_name": "Table Mountain View",
+    "city": "Cape Town",
+    "country": "South Africa",
+    "star_rating": 5.0,
+    "traveller_type": "Family",
+    "review_text": "Our family had an amazing time at Table Mountain View! From the moment we arrived, the staff welcomed us with warm smiles and made us feel right at home. The location is fantastic—right by some of Cape Town's must-see attractions, which made exploring with the kids super easy. \n\nThe room was spotless and incredibly comfortable, providing us with the perfect retreat after a day of adventures. The kids loved the pool, which was just the right size for them to splash around while we relaxed nearby. Overall, our stay was a wonderful experience, and we can't wait to come back!",
+    "metadata": {
+      "avg_overall": 9.079365079365079,
+      "avg_cleanliness": 9.292857142857141,
+      "avg_comfort": 9.161904761904765,
+      "avg_location": 9.055555555555554
+    }
+  },
+  {
+    "hotel_name": "Table Mountain View",
+    "city": "Cape Town",
+    "country": "South Africa",
+    "star_rating": 5.0,
+    "traveller_type": "Solo",
+    "review_text": "I recently stayed at Table Mountain View during my solo trip to Cape Town, and overall, it was pretty fantastic. The location is a highlight; I loved being so close to everything, with breathtaking views of the mountain right from my room. The staff were incredibly friendly and attentive, always ready to help with any questions I had, which made me feel really welcome.\n\nThe cleanliness of the hotel was very good, though I did notice a couple of spots that could have used a bit more attention. The comfort level was impressive as well; my bed was cozy after long days of exploring the city. While I felt like I got great value for what I paid, there were a few facilities that could have been improved. Still, I wouldn't hesitate to recommend this place to other solo travelers looking for a memorable stay in Cape Town!",
+    "metadata": {
+      "avg_overall": 8.979951100244502,
+      "avg_cleanliness": 8.709290953545237,
+      "avg_comfort": 8.824938875305618,
+      "avg_location": 9.3156479217604
+    }
+  },
+  {
+    "hotel_name": "Tango Boutique",
+    "city": "Buenos Aires",
+    "country": "Argentina",
+    "star_rating": 5.0,
+    "traveller_type": "Business",
+    "review_text": "I recently stayed at Tango Boutique during a business trip to Buenos Aires, and I have to say, it really exceeded my expectations. The location is fantastic, right in the heart of the city, making it super convenient for meetings and exploring in my downtime. The facilities were really nice too—everything from the gym to the lounge area felt modern and well-maintained.\n\nThe staff was friendly and attentive, which made the experience even better. I felt welcome from the moment I walked in. While the cleanliness was mostly good, there were a couple of minor areas that could use a little more attention. Overall, it was a solid choice for my stay, and I’d definitely consider returning on my next trip!",
+    "metadata": {
+      "avg_overall": 8.690000000000001,
+      "avg_cleanliness": 8.331111111111111,
+      "avg_comfort": 8.554444444444442,
+      "avg_location": 9.28244444444444
+    }
+  },
+  {
+    "hotel_name": "Tango Boutique",
+    "city": "Buenos Aires",
+    "country": "Argentina",
+    "star_rating": 5.0,
+    "traveller_type": "Couple",
+    "review_text": "We recently had a lovely stay at Tango Boutique in Buenos Aires, and while there were some highlights, a few things could have been better. The cleanliness of the hotel was fantastic; our room was spotless, and it really added to our overall comfort. Speaking of comfort, the bed was dreamy, making it easy to unwind after long days of exploring the city. \n\nThe location was another strong point. We loved being so close to trendy neighborhoods and local attractions. However, we found the facilities to be a bit lacking; they were nice, but we expected a little more from a five-star experience. Overall, we enjoyed our trip and found good value for money, but there’s room for improvement in a few areas.",
+    "metadata": {
+      "avg_overall": 8.819938650306739,
+      "avg_cleanliness": 9.232055214723937,
+      "avg_comfort": 9.150920245398769,
+      "avg_location": 8.994785276073626
+    }
+  },
+  {
+    "hotel_name": "Tango Boutique",
+    "city": "Buenos Aires",
+    "country": "Argentina",
+    "star_rating": 5.0,
+    "traveller_type": "Family",
+    "review_text": "We recently stayed at Tango Boutique in Buenos Aires, and overall, it was a fantastic experience for our family. The cleanliness of the hotel really stood out; everything felt spotless, which is always reassuring when traveling with kids. The facilities were impressive too—there was plenty for us to do, and the kids loved the pool! \n\nThe location was pretty good as well, making it easy to explore the vibrant city while still being in a quieter area. I do wish the staff had been a bit more attentive at times, but they were friendly overall and helpful when we needed assistance. All in all, we had a lovely stay, and I would definitely recommend it to other families looking for a comfortable place in Buenos Aires!",
+    "metadata": {
+      "avg_overall": 8.9350762527233,
+      "avg_cleanliness": 9.225490196078436,
+      "avg_comfort": 8.867755991285403,
+      "avg_location": 8.69433551198258
+    }
+  },
+  {
+    "hotel_name": "Tango Boutique",
+    "city": "Buenos Aires",
+    "country": "Argentina",
+    "star_rating": 5.0,
+    "traveller_type": "Solo",
+    "review_text": "Staying at Tango Boutique in Buenos Aires was a fantastic experience for my solo trip. The location couldn’t be better—right in the heart of the city, making it easy to explore all the vibrant neighborhoods. The staff was genuinely friendly and went out of their way to make sure I felt comfortable, which made a huge difference for me as a solo traveler. \n\nI also appreciated the cleanliness; my room was spotless and cozy, perfect for unwinding after a day of sightseeing. The facilities were great, too, especially the little rooftop terrace where I enjoyed my morning coffee while soaking in the views. Overall, I felt like I got a lot of value for my money here. I would definitely recommend Tango Boutique to anyone looking for a great stay in Buenos Aires!",
+    "metadata": {
+      "avg_overall": 8.846835443037977,
+      "avg_cleanliness": 8.619999999999987,
+      "avg_comfort": 8.566329113924057,
+      "avg_location": 9.01949367088606
+    }
+  },
+  {
+    "hotel_name": "The Azure Tower",
+    "city": "New York",
+    "country": "United States",
+    "star_rating": 5.0,
+    "traveller_type": "Business",
+    "review_text": "I recently stayed at The Azure Tower during a business trip to New York, and I have to say, it was a really nice experience! The location is absolutely fantastic—just a stone's throw from all the major spots, which made getting to meetings a breeze. The facilities are impressive too; the gym was well-equipped and the business lounge offered a great environment to catch up on emails. \n\nAs for the room, it was comfortable, though I wish it had a bit more of a luxury feel. The staff were friendly and helpful, which added a nice touch to my stay. Overall, I’d definitely recommend it for anyone traveling for work.",
+    "metadata": {
+      "avg_overall": 8.730653266331664,
+      "avg_cleanliness": 8.47562814070353,
+      "avg_comfort": 8.57135678391959,
+      "avg_location": 9.623115577889454
+    }
+  },
+  {
+    "hotel_name": "The Azure Tower",
+    "city": "New York",
+    "country": "United States",
+    "star_rating": 5.0,
+    "traveller_type": "Couple",
+    "review_text": "We recently stayed at The Azure Tower during our trip to New York, and overall, it was a really nice experience. The location couldn’t be better—right in the heart of the city, making it easy for us to explore all the iconic spots. We were also impressed by the cleanliness; everything felt so spotless, which really added to our comfort. However, while the facilities were decent, we expected a bit more for a five-star place. The staff were friendly enough, but there were moments we felt they could have been a bit more attentive. Despite a few bumps, we enjoyed our stay and appreciated the fantastic views from our room. Would definitely recommend for couples looking to enjoy the city!",
+    "metadata": {
+      "avg_overall": 8.831892697466468,
+      "avg_cleanliness": 9.375558867362152,
+      "avg_comfort": 9.162444113263788,
+      "avg_location": 9.355439642324898
+    }
+  },
+  {
+    "hotel_name": "The Azure Tower",
+    "city": "New York",
+    "country": "United States",
+    "star_rating": 5.0,
+    "traveller_type": "Family",
+    "review_text": "We just got back from an amazing stay at The Azure Tower in New York, and I can't rave enough about it! As a family traveling with kids, we really appreciated the fantastic facilities. The pool was a hit with the little ones, and the gym was perfect for my partner and me to squeeze in a workout. The cleanliness of the hotel was impressive; everything felt spotless and well taken care of.\n\nThe location couldn't have been better, either. We were just a short walk from Central Park and some great restaurants, making it super easy to explore the city. The staff was friendly, always ready to help with a smile. Overall, our experience was very good and we left with wonderful memories. Can't wait to come back!",
+    "metadata": {
+      "avg_overall": 8.939553752535511,
+      "avg_cleanliness": 9.36227180527383,
+      "avg_comfort": 8.860649087221084,
+      "avg_location": 9.070182555780937
+    }
+  },
+  {
+    "hotel_name": "The Azure Tower",
+    "city": "New York",
+    "country": "United States",
+    "star_rating": 5.0,
+    "traveller_type": "Solo",
+    "review_text": "I recently stayed at The Azure Tower while exploring New York solo, and overall, it was a really nice experience. The location couldn’t be better—right in the heart of everything, making it super easy to dive into the city's vibrant atmosphere. The staff were also fantastic; they were friendly and attentive, always ready to help with a smile. \n\nThe comfort of my room was good, though I wished it felt a bit more cozy. It was clean and well-maintained, which I always appreciate as a solo traveler. I think the facilities were decent, but I expected a little more from a five-star hotel. Despite these small drawbacks, I still left with a positive impression and felt it was a good value for what I paid. Would I stay again? Definitely, but I’d hope for a cozier vibe next time!",
+    "metadata": {
+      "avg_overall": 8.817431192660553,
+      "avg_cleanliness": 8.752293577981652,
+      "avg_comfort": 8.547935779816509,
+      "avg_location": 9.339678899082578
+    }
+  },
+  {
+    "hotel_name": "The Bosphorus Inn",
+    "city": "Istanbul",
+    "country": "Turkey",
+    "star_rating": 5.0,
+    "traveller_type": "Business",
+    "review_text": "I recently stayed at The Bosphorus Inn during a business trip to Istanbul, and I have to say, it was a really nice experience! The location is absolutely fantastic; you're just steps away from the stunning views of the Bosphorus and some great restaurants. The staff were super friendly and helpful, which made my stay feel even more comfortable. As for the facilities, they were impressive—everything I needed for a productive trip was right there. My only minor gripe was the value for money; it felt a bit on the higher side, but considering the overall experience, I’d say it was worth it. I’d definitely recommend this place if you’re looking to mix business with a bit of leisure in such a vibrant city!",
+    "metadata": {
+      "avg_overall": 8.785421994884917,
+      "avg_cleanliness": 8.462915601023019,
+      "avg_comfort": 8.700255754475709,
+      "avg_location": 9.492583120204603
+    }
+  },
+  {
+    "hotel_name": "The Bosphorus Inn",
+    "city": "Istanbul",
+    "country": "Turkey",
+    "star_rating": 5.0,
+    "traveller_type": "Couple",
+    "review_text": "We just got back from an incredible trip to Istanbul and stayed at The Bosphorus Inn, and let me tell you, it was fantastic! The location was perfect—just steps away from the stunning waterfront and all the charming little cafes and shops. We spent hours just strolling around the area. \n\nThe cleanliness of the hotel was impressive; our room felt spotless and so inviting. We also loved how comfortable everything was; our bed was like sleeping on a cloud after long days of exploring. The staff was really nice too, always ready to help us with recommendations or anything we needed. Overall, we had a great experience, and I can’t recommend this place enough for couples looking for a romantic getaway in Istanbul!",
+    "metadata": {
+      "avg_overall": 8.90858433734941,
+      "avg_cleanliness": 9.358734939759042,
+      "avg_comfort": 9.305572289156615,
+      "avg_location": 9.21987951807228
+    }
+  },
+  {
+    "hotel_name": "The Bosphorus Inn",
+    "city": "Istanbul",
+    "country": "Turkey",
+    "star_rating": 5.0,
+    "traveller_type": "Family",
+    "review_text": "I recently stayed at The Bosphorus Inn with my family, and we had an amazing time! The hotel was spotless, which is always a plus when traveling with kids. We felt really comfortable in our room, and the facilities were impressive, perfect for unwinding after a day of exploring Istanbul. The location was quite good, allowing us to easily access many attractions while enjoying the beautiful views of the Bosphorus. \n\nThe staff was friendly and accommodating, always ready to help with a smile. Overall, I would highly recommend this hotel if you’re looking for a fantastic family getaway in Istanbul!",
+    "metadata": {
+      "avg_overall": 9.019874476987452,
+      "avg_cleanliness": 9.386610878661095,
+      "avg_comfort": 8.980753138075313,
+      "avg_location": 8.921129707112968
+    }
+  },
+  {
+    "hotel_name": "The Bosphorus Inn",
+    "city": "Istanbul",
+    "country": "Turkey",
+    "star_rating": 5.0,
+    "traveller_type": "Solo",
+    "review_text": "I recently stayed at The Bosphorus Inn during my solo trip to Istanbul, and overall, it was a great experience. The location is absolutely fantastic—just steps away from the waterfront and close to so many attractions, which made it easy to explore the city. The staff were incredibly friendly and helpful, always ready with a smile and some local tips. \n\nThe cleanliness of the hotel was impressive; my room felt fresh and tidy every day. While the facilities were nice, I did wish for a bit more variety in the offerings. Still, I found it to be a cozy spot to unwind after a day of wandering. Overall, I’d definitely recommend it to fellow travelers looking for comfort and great service in a prime location!",
+    "metadata": {
+      "avg_overall": 8.920240963855415,
+      "avg_cleanliness": 8.775662650602417,
+      "avg_comfort": 8.684337349397593,
+      "avg_location": 9.205060240963856
+    }
+  },
+  {
+    "hotel_name": "The Bund Palace",
+    "city": "Shanghai",
+    "country": "China",
+    "star_rating": 5.0,
+    "traveller_type": "Business",
+    "review_text": "I recently stayed at The Bund Palace during a business trip to Shanghai, and overall, it was a really nice experience. The location is fantastic—right by the river with stunning views of the skyline. I loved how easy it was to access nearby meeting venues and restaurants. The facilities are impressive, especially the gym, which I found to be well-equipped. However, I did notice that the cleanliness could be a bit better; there were some spots that seemed overlooked in my room. The staff was excellent, always ready to help with a smile. While I might have expected a bit more for the price, I still walked away satisfied with my stay.",
+    "metadata": {
+      "avg_overall": 8.920833333333327,
+      "avg_cleanliness": 8.439950980392155,
+      "avg_comfort": 8.720833333333328,
+      "avg_location": 9.673774509803923
+    }
+  },
+  {
+    "hotel_name": "The Bund Palace",
+    "city": "Shanghai",
+    "country": "China",
+    "star_rating": 5.0,
+    "traveller_type": "Couple",
+    "review_text": "We recently stayed at The Bund Palace in Shanghai, and it was an amazing experience. The location couldn't be better—right near the river with stunning views, making our evening walks truly memorable. The cleanliness of the hotel was impressive, and our room felt so comfortable, like a cozy retreat after a day of exploring the city. \n\nWe appreciated the staff, who were generally friendly and helpful, though we encountered a minor hiccup at check-in. The facilities were very good, but we expected just a bit more variety in the dining options. Overall, we just felt that this hotel really added to our trip, and we would highly recommend it for anyone looking to enjoy a romantic getaway in Shanghai!",
+    "metadata": {
+      "avg_overall": 9.037021276595748,
+      "avg_cleanliness": 9.381418439716311,
+      "avg_comfort": 9.305531914893619,
+      "avg_location": 9.419007092198573
+    }
+  },
+  {
+    "hotel_name": "The Bund Palace",
+    "city": "Shanghai",
+    "country": "China",
+    "star_rating": 5.0,
+    "traveller_type": "Family",
+    "review_text": "We just returned from a family trip to Shanghai and stayed at The Bund Palace. Honestly, it was fantastic! The cleanliness was top-notch—everything felt spotless, which is a big deal when you’re traveling with kids. We also loved the location; being close to the river meant a quick walk to some amazing sights. The facilities were impressive too; the kids enjoyed the pool while my partner and I made the most of the spa. There were a few minor hiccups with the service, but nothing that dampened our experience. Overall, we had a great time, and I’d definitely recommend The Bund Palace for families looking for a comfortable stay in the heart of the city!",
+    "metadata": {
+      "avg_overall": 9.161122661122654,
+      "avg_cleanliness": 9.372141372141373,
+      "avg_comfort": 8.991268191268194,
+      "avg_location": 9.137422037422034
+    }
+  },
+  {
+    "hotel_name": "The Bund Palace",
+    "city": "Shanghai",
+    "country": "China",
+    "star_rating": 5.0,
+    "traveller_type": "Solo",
+    "review_text": "I recently stayed at The Bund Palace during my solo trip to Shanghai, and I must say, it was a fantastic experience. The location is unbeatable; you're right at the heart of the action, with stunning views of the Bund just a short walk away. The staff were incredibly friendly and attentive, which really made me feel welcome as a solo traveler. My room was very comfortable, providing a perfect retreat after a day of exploring the city. I appreciated the cleanliness throughout the hotel, too; everything was spotless and well-maintained. Overall, I found great value for the price, and I'd definitely recommend it to anyone visiting Shanghai!",
+    "metadata": {
+      "avg_overall": 9.07085201793722,
+      "avg_cleanliness": 8.778699551569508,
+      "avg_comfort": 8.69506726457398,
+      "avg_location": 9.426233183856501
+    }
+  },
+  {
+    "hotel_name": "The Gateway Royale",
+    "city": "Mumbai",
+    "country": "India",
+    "star_rating": 5.0,
+    "traveller_type": "Business",
+    "review_text": "I recently stayed at The Gateway Royale during a business trip to Mumbai, and I have to say, it was a really nice experience overall. The location is fantastic—right in the heart of the city, making it super convenient for meetings and exploration. The facilities are impressive; the gym was well-equipped, and the business center had everything I needed. The staff went above and beyond to ensure my stay was comfortable, always greeting me with a smile and quick to assist. While the cleanliness could be a touch better, it didn’t really detract from my overall enjoyment. I’d definitely recommend this hotel to anyone traveling for work; it strikes a good balance between comfort and accessibility!",
+    "metadata": {
+      "avg_overall": 8.702849740932637,
+      "avg_cleanliness": 8.34533678756477,
+      "avg_comfort": 8.53652849740932,
+      "avg_location": 9.426683937823835
+    }
+  },
+  {
+    "hotel_name": "The Gateway Royale",
+    "city": "Mumbai",
+    "country": "India",
+    "star_rating": 5.0,
+    "traveller_type": "Couple",
+    "review_text": "We just returned from an incredible stay at The Gateway Royale in Mumbai, and we can’t stop raving about it! From the moment we arrived, the staff made us feel so welcome and at home. The cleanliness of the hotel is impressive; everything was spotless, and it really added to our comfort. \n\nThe location couldn’t have been better—perfect for exploring the local sights and indulging in some delicious street food nearby. We spent a lot of time enjoying the hotel’s facilities too, which were really nice and added to our overall experience. \n\nWe definitely felt we got great value for our money. If you’re looking for a perfect getaway in Mumbai, this place should be at the top of your list!",
+    "metadata": {
+      "avg_overall": 8.828530670470744,
+      "avg_cleanliness": 9.225962910128395,
+      "avg_comfort": 9.148930099857344,
+      "avg_location": 9.139372325249637
+    }
+  },
+  {
+    "hotel_name": "The Gateway Royale",
+    "city": "Mumbai",
+    "country": "India",
+    "star_rating": 5.0,
+    "traveller_type": "Family",
+    "review_text": "We just wrapped up a fantastic family trip to Mumbai and stayed at The Gateway Royale. From the moment we arrived, we were greeted by friendly staff who made us feel right at home. The cleanliness of the hotel was impressive—everything felt spotless and well maintained, which is so important when traveling with kids. \n\nThe facilities were great too; the kids loved the pool area and we enjoyed some relaxing time at the spa. The location was convenient for exploring the city, and we appreciated how easy it was to get to popular attractions. Overall, it was a wonderful experience and a perfect base for our family adventures in Mumbai!",
+    "metadata": {
+      "avg_overall": 8.952291666666667,
+      "avg_cleanliness": 9.241875000000011,
+      "avg_comfort": 8.85083333333334,
+      "avg_location": 8.859166666666669
+    }
+  },
+  {
+    "hotel_name": "The Gateway Royale",
+    "city": "Mumbai",
+    "country": "India",
+    "star_rating": 5.0,
+    "traveller_type": "Solo",
+    "review_text": "I just got back from an incredible solo trip to Mumbai, and I can’t stop raving about my stay at The Gateway Royale! The location was fantastic—right in the heart of the city, making it super easy to explore. The staff was incredibly friendly and attentive, always ready with a smile and helpful tips about local spots. My room was really nice; it had a cozy feel and was spotless, which made coming back to it after a day of sightseeing so refreshing. The amenities were pretty impressive too, with a lovely pool area that was perfect for unwinding. Overall, I felt like I got amazing value for my money. If you’re traveling solo in Mumbai, this place is definitely worth considering!",
+    "metadata": {
+      "avg_overall": 8.862559241706172,
+      "avg_cleanliness": 8.647393364928917,
+      "avg_comfort": 8.555924170616112,
+      "avg_location": 9.15568720379146
+    }
+  },
+  {
+    "hotel_name": "The Golden Oasis",
+    "city": "Dubai",
+    "country": "United Arab Emirates",
+    "star_rating": 5.0,
+    "traveller_type": "Business",
+    "review_text": "I recently stayed at The Golden Oasis during a business trip to Dubai, and I was quite impressed. The location is fantastic, making it super easy to access meeting venues and local attractions. The facilities are top-notch, with a well-equipped business center and a calming pool area to unwind after a long day. I found my room to be really nice and comfortable, perfect for recharging before tackling the next day's agenda.\n\nHowever, I did feel that the value for money could be a bit better, especially given the high-end reputation. Despite this, the staff were attentive and helpful, which definitely added to the overall experience. I left feeling refreshed and satisfied, ready to take on whatever came next.",
+    "metadata": {
+      "avg_overall": 8.965668202764983,
+      "avg_cleanliness": 8.603456221198154,
+      "avg_comfort": 9.058755760368653,
+      "avg_location": 9.243087557603678
+    }
+  },
+  {
+    "hotel_name": "The Golden Oasis",
+    "city": "Dubai",
+    "country": "United Arab Emirates",
+    "star_rating": 5.0,
+    "traveller_type": "Couple",
+    "review_text": "We just returned from an incredible stay at The Golden Oasis, and we can't stop raving about it! From the moment we arrived, the staff made us feel truly special with their warm hospitality. The cleanliness of the hotel was absolutely impressive; everything was spotless and shiny, which made us feel right at home. \n\nOur room was a dream—so comfortable that we found it hard to leave! We also enjoyed exploring the fantastic facilities, especially the stunning pool area. Though the location was a tad away from some major attractions, it was still very good, and we loved the peaceful vibe. Overall, this trip was an unforgettable experience, and we can’t wait to come back!",
+    "metadata": {
+      "avg_overall": 9.087252124645913,
+      "avg_cleanliness": 9.52407932011332,
+      "avg_comfort": 9.636402266288956,
+      "avg_location": 8.941218130311618
+    }
+  },
+  {
+    "hotel_name": "The Golden Oasis",
+    "city": "Dubai",
+    "country": "United Arab Emirates",
+    "star_rating": 5.0,
+    "traveller_type": "Family",
+    "review_text": "Our stay at The Golden Oasis was fantastic! As a family traveling to Dubai, we were really impressed by how spotless the hotel was. The kids loved the facilities, especially the pool area, which was perfect for some fun in the sun. The staff were incredibly friendly and attentive, making us feel right at home. While the location was good, it required a bit of travel to reach some attractions, but honestly, the comfort and amenities made up for it. Overall, we had a wonderful experience, and I’d definitely recommend it for families looking for a relaxing getaway!",
+    "metadata": {
+      "avg_overall": 9.214380530973454,
+      "avg_cleanliness": 9.490044247787601,
+      "avg_comfort": 9.375221238938058,
+      "avg_location": 8.644690265486718
+    }
+  },
+  {
+    "hotel_name": "The Golden Oasis",
+    "city": "Dubai",
+    "country": "United Arab Emirates",
+    "star_rating": 5.0,
+    "traveller_type": "Solo",
+    "review_text": "I recently had the pleasure of staying at The Golden Oasis during my solo trip to Dubai, and it was quite an experience! The staff were absolutely fantastic; they genuinely went out of their way to make sure I felt welcomed and comfortable. The facilities were impressive as well, with everything from a stunning pool to a relaxing spa that made unwinding easy after a day of exploring the city. \n\nWhile the location was good, it wasn't the absolute best for getting around, but it was still very convenient. The cleanliness of my room was almost spotless, though I did find a few minor details that could use a little attention. Overall, I had a really nice stay and would highly recommend it for anyone looking to indulge a bit while traveling solo!",
+    "metadata": {
+      "avg_overall": 9.100451467268625,
+      "avg_cleanliness": 8.909932279909711,
+      "avg_comfort": 9.07110609480813,
+      "avg_location": 8.897291196388272
+    }
+  },
+  {
+    "hotel_name": "The Kiwi Grand",
+    "city": "Wellington",
+    "country": "New Zealand",
+    "star_rating": 5.0,
+    "traveller_type": "Business",
+    "review_text": "I recently stayed at The Kiwi Grand during a business trip to Wellington, and I have to say, it was a fantastic experience. The location is just perfect—right in the heart of the city, making it super convenient for meetings and exploring a bit after work. \n\nThe facilities are impressive, with a well-equipped gym and a lovely lounge area that’s perfect for unwinding after a long day. I also found the staff to be incredibly friendly and attentive, always ready to help with a smile. \n\nWhile the cleanliness was generally good, there were a couple of minor areas that could use a little more attention. Overall, though, my stay was really nice, and I would definitely recommend The Kiwi Grand to fellow business travelers!",
+    "metadata": {
+      "avg_overall": 8.881884057971028,
+      "avg_cleanliness": 8.618115942028993,
+      "avg_comfort": 8.848309178743955,
+      "avg_location": 9.298550724637675
+    }
+  },
+  {
+    "hotel_name": "The Kiwi Grand",
+    "city": "Wellington",
+    "country": "New Zealand",
+    "star_rating": 5.0,
+    "traveller_type": "Couple",
+    "review_text": "We recently stayed at The Kiwi Grand during our trip to Wellington, and it was a fantastic experience! The location couldn’t be better; it’s just a short walk to the waterfront and all the great cafes and shops. Our room was spotless and incredibly comfortable, making it hard to leave every morning! The staff were friendly and attentive, which really added to the welcoming vibe of the hotel. The only thing we found a bit lacking was the range of facilities, but honestly, we spent most of our time exploring the city anyway. Overall, we loved our stay and would definitely recommend The Kiwi Grand to anyone looking for a cozy and convenient place to enjoy Wellington!",
+    "metadata": {
+      "avg_overall": 9.009931034482758,
+      "avg_cleanliness": 9.50827586206895,
+      "avg_comfort": 9.44110344827586,
+      "avg_location": 9.008275862068961
+    }
+  },
+  {
+    "hotel_name": "The Kiwi Grand",
+    "city": "Wellington",
+    "country": "New Zealand",
+    "star_rating": 5.0,
+    "traveller_type": "Family",
+    "review_text": "We just wrapped up an incredible stay at The Kiwi Grand in Wellington, and I can’t recommend it enough for families! The cleanliness of the hotel was absolutely amazing—everything felt spotless and well cared for. Our kids loved the facilities, especially the pool area, which was a blast. \n\nWe also appreciated the comfort of our room; it was spacious enough for our family and had everything we needed for a relaxing stay. The location was pretty good too, with easy access to nearby attractions. The staff was friendly and always ready to help us out with any questions. Overall, it was a fantastic experience, and we can't wait to come back!",
+    "metadata": {
+      "avg_overall": 9.132421052631585,
+      "avg_cleanliness": 9.527578947368422,
+      "avg_comfort": 9.14631578947368,
+      "avg_location": 8.709684210526326
+    }
+  },
+  {
+    "hotel_name": "The Kiwi Grand",
+    "city": "Wellington",
+    "country": "New Zealand",
+    "star_rating": 5.0,
+    "traveller_type": "Solo",
+    "review_text": "Wow, my stay at The Kiwi Grand in Wellington was absolutely amazing! As a solo traveler, I was blown away by the warm welcome from the staff; they were incredibly friendly and went above and beyond to make sure I had everything I needed. The location is just perfect—right in the heart of the city, making it super easy to explore the local sights and grab a bite to eat.\n\nThe room was really nice—comfortable enough to relax after a long day of wandering around. I also appreciated how spotless everything was; it really made me feel at home. Overall, this place is an excellent choice for anyone looking to enjoy a fantastic stay in Wellington. I can’t wait to come back!",
+    "metadata": {
+      "avg_overall": 9.027802690582957,
+      "avg_cleanliness": 8.920852017937221,
+      "avg_comfort": 8.832062780269059,
+      "avg_location": 9.015919282511202
+    }
+  },
+  {
+    "hotel_name": "The Maple Grove",
+    "city": "Toronto",
+    "country": "Canada",
+    "star_rating": 5.0,
+    "traveller_type": "Business",
+    "review_text": "I recently stayed at The Maple Grove during a business trip to Toronto, and I must say, it was a fantastic experience. The location is impressive; I found it so convenient to access meetings and local restaurants. The staff was incredibly friendly and attentive, making my stay all the more enjoyable. I was particularly pleased with the hotel facilities. They had everything I needed to stay productive, from a great gym to comfortable workspaces. The room itself was very good, providing a nice balance of comfort and style. Overall, I had a great time here and would definitely recommend it to fellow business travelers looking for a pleasant stay.",
+    "metadata": {
+      "avg_overall": 8.906046511627903,
+      "avg_cleanliness": 8.683720930232562,
+      "avg_comfort": 8.923023255813959,
+      "avg_location": 9.168837209302323
+    }
+  },
+  {
+    "hotel_name": "The Maple Grove",
+    "city": "Toronto",
+    "country": "Canada",
+    "star_rating": 5.0,
+    "traveller_type": "Couple",
+    "review_text": "We just got back from an incredible stay at The Maple Grove in Toronto, and we can’t stop raving about it! From the moment we walked in, we were blown away by how spotless everything was. The attention to cleanliness really set the tone for our trip. \n\nOur room was not only beautiful but incredibly comfortable, making it hard to leave each morning. We loved exploring the nearby areas; the location was very good for sightseeing and dining. \n\nThe staff were friendly and attentive, always ready to help with a smile. Overall, we had such a fantastic experience and would highly recommend The Maple Grove to anyone looking for a cozy getaway in the heart of the city!",
+    "metadata": {
+      "avg_overall": 9.02855029585801,
+      "avg_cleanliness": 9.590384615384622,
+      "avg_comfort": 9.508431952662718,
+      "avg_location": 8.853106508875745
+    }
+  },
+  {
+    "hotel_name": "The Maple Grove",
+    "city": "Toronto",
+    "country": "Canada",
+    "star_rating": 5.0,
+    "traveller_type": "Family",
+    "review_text": "We just got back from a family trip to The Maple Grove in Toronto, and I have to say, it was a fantastic experience! The cleanliness was impressive—everything felt so spotless, which is a big deal when you’re traveling with kids. The comfort factor was also top-notch; our room was cozy, and we all slept really well after busy days exploring the city. The staff were super friendly and always ready to help with any questions we had. The location was decent too, with plenty of family-friendly attractions nearby. Overall, we had a wonderful stay and would definitely recommend it to other families looking for a great place to unwind after a day of adventures!",
+    "metadata": {
+      "avg_overall": 9.15847826086956,
+      "avg_cleanliness": 9.554347826086957,
+      "avg_comfort": 9.216956521739124,
+      "avg_location": 8.548478260869574
+    }
+  },
+  {
+    "hotel_name": "The Maple Grove",
+    "city": "Toronto",
+    "country": "Canada",
+    "star_rating": 5.0,
+    "traveller_type": "Solo",
+    "review_text": "I just wrapped up an amazing stay at The Maple Grove in Toronto, and I can't recommend it enough! As a solo traveler, I really appreciated how welcoming the staff was; they went out of their way to make sure I felt at home. The cleanliness of the hotel was top-notch, and my room was very comfortable, making it easy to unwind after a day of exploring the city. I loved the location too—close to some great restaurants and attractions, yet tucked away enough to offer a sense of peace. Overall, my experience was fantastic and a perfect fit for my trip. Can't wait to return!",
+    "metadata": {
+      "avg_overall": 9.04597989949749,
+      "avg_cleanliness": 8.97236180904523,
+      "avg_comfort": 8.910552763819089,
+      "avg_location": 8.850502512562812
+    }
+  },
+  {
+    "hotel_name": "The Orchid Palace",
+    "city": "Bangkok",
+    "country": "Thailand",
+    "star_rating": 5.0,
+    "traveller_type": "Business",
+    "review_text": "I recently stayed at The Orchid Palace during a business trip to Bangkok, and it was such a great experience! The location couldn't have been better—right in the heart of the city, making it super easy to get to my meetings. The staff were incredibly welcoming and attentive, always ready to help with a smile. \n\nThe facilities were really impressive too; I loved the conference rooms and the business lounge. After a long day of meetings, I found the room to be very comfortable, which made unwinding much easier. A couple of small things could have been a bit better, but overall, I’d say it was a fantastic stay. I’ll definitely consider returning on my next trip!",
+    "metadata": {
+      "avg_overall": 8.886265060240966,
+      "avg_cleanliness": 8.395903614457838,
+      "avg_comfort": 8.848674698795183,
+      "avg_location": 9.576385542168678
+    }
+  },
+  {
+    "hotel_name": "The Orchid Palace",
+    "city": "Bangkok",
+    "country": "Thailand",
+    "star_rating": 5.0,
+    "traveller_type": "Couple",
+    "review_text": "We just returned from an amazing stay at The Orchid Palace, and we genuinely enjoyed our time there. The location is fantastic—just a stone's throw from some of Bangkok's must-see spots, making it easy for us to explore the city. The staff was really nice and attentive, always ready to help with a smile. We appreciated how clean and comfortable our room was; it felt like a little oasis after a busy day out. The only downside was that the facilities could use a bit of an upgrade. While they were nice, we expected a touch more from a five-star hotel. Overall, though, it was a great experience, and we’d definitely consider returning!",
+    "metadata": {
+      "avg_overall": 9.001104972375693,
+      "avg_cleanliness": 9.313121546961323,
+      "avg_comfort": 9.445718232044195,
+      "avg_location": 9.274171270718227
+    }
+  },
+  {
+    "hotel_name": "The Orchid Palace",
+    "city": "Bangkok",
+    "country": "Thailand",
+    "star_rating": 5.0,
+    "traveller_type": "Family",
+    "review_text": "We just returned from an incredible family trip to Bangkok, and staying at The Orchid Palace was definitely a highlight! The hotel was absolutely spotless, and the comfort of our room made it feel like a home away from home. The kids loved the pool area, which had fantastic facilities for them to splash around and play. \n\nWhat really stood out, though, was the staff—everyone was so friendly and attentive, making our stay even more enjoyable. Plus, the location was perfect for exploring the city, with many attractions just a short ride away. Overall, it was a great experience, and we can't wait to come back!",
+    "metadata": {
+      "avg_overall": 9.103200000000012,
+      "avg_cleanliness": 9.288799999999998,
+      "avg_comfort": 9.116599999999998,
+      "avg_location": 8.980399999999987
+    }
+  },
+  {
+    "hotel_name": "The Orchid Palace",
+    "city": "Bangkok",
+    "country": "Thailand",
+    "star_rating": 5.0,
+    "traveller_type": "Solo",
+    "review_text": "I recently stayed at The Orchid Palace during my solo trip to Bangkok, and I have to say, it was fantastic! The location couldn’t be better; I was just a stone's throw away from some amazing street food and vibrant markets. The staff were incredibly friendly and went out of their way to make me feel welcome—definitely a highlight of my stay. \n\nThe room was very comfortable, providing a perfect retreat after a day of exploring the city. While the cleanliness was mostly impressive, I did notice a few minor spots that could use a bit more attention. Overall, I felt like I got great value for my money. If you’re traveling solo and looking for a place to unwind while being close to all the action, I highly recommend this hotel!",
+    "metadata": {
+      "avg_overall": 9.019711538461534,
+      "avg_cleanliness": 8.68389423076924,
+      "avg_comfort": 8.816346153846151,
+      "avg_location": 9.302163461538466
+    }
+  },
+  {
+    "hotel_name": "The Royal Compass",
+    "city": "London",
+    "country": "United Kingdom",
+    "star_rating": 5.0,
+    "traveller_type": "Business",
+    "review_text": "I recently stayed at The Royal Compass during a business trip to London, and overall, it was a very good experience. The location is fantastic, just a stone's throw from key meeting spots and attractions, which saved me a lot of travel time. The staff were incredibly helpful, making my check-in smooth and answering any questions I had with a smile.\n\nThe room was comfortable and well-appointed, perfect for unwinding after a long day of meetings. While the cleanliness was mostly good, I did notice a few spots that could use more attention. As for the value for money, it felt a bit steep for what I got, but the convenience and service made up for it. If you're traveling for business, this place is definitely worth considering!",
+    "metadata": {
+      "avg_overall": 8.769633507853401,
+      "avg_cleanliness": 8.41675392670157,
+      "avg_comfort": 8.819895287958104,
+      "avg_location": 9.564921465968583
+    }
+  },
+  {
+    "hotel_name": "The Royal Compass",
+    "city": "London",
+    "country": "United Kingdom",
+    "star_rating": 5.0,
+    "traveller_type": "Couple",
+    "review_text": "We recently stayed at The Royal Compass during our romantic getaway in London, and overall, it was a really nice experience. The location couldn’t have been better, as we were just a short stroll away from many iconic attractions and charming neighborhoods. The hotel itself was spotless and exuded a sense of luxury that made our stay feel special.\n\nWhile we found the comfort level to be fantastic, with a cozy bed that made it hard to get up in the morning, we did think the facilities could be improved. The gym was decent but lacked some of the equipment we hoped to use. Still, the staff were friendly and attentive, adding to the overall positive vibe of our trip. We felt that, while it was a bit pricey, the experience was worth it for a couple’s retreat.",
+    "metadata": {
+      "avg_overall": 8.886350148367947,
+      "avg_cleanliness": 9.316765578635016,
+      "avg_comfort": 9.45623145400592,
+      "avg_location": 9.275222551928794
+    }
+  },
+  {
+    "hotel_name": "The Royal Compass",
+    "city": "London",
+    "country": "United Kingdom",
+    "star_rating": 5.0,
+    "traveller_type": "Family",
+    "review_text": "We just returned from a fantastic family trip to London, and our stay at The Royal Compass made it even more special! The cleanliness of the hotel was impeccable; everywhere we looked was spotless, which is always a plus when traveling with kids. The comfort of our family suite was another highlight—plenty of space for everyone to spread out, and the beds were super cozy after a long day of sightseeing.\n\nThe location was perfect, too. We were just a short walk from the major attractions, which made exploring the city so much easier with the little ones. The staff were friendly and attentive, making us feel right at home. Honestly, we felt like we struck gold with this choice, and we can’t wait to plan our next visit!",
+    "metadata": {
+      "avg_overall": 8.977598152424935,
+      "avg_cleanliness": 9.333718244803686,
+      "avg_comfort": 9.136951501154734,
+      "avg_location": 8.956812933025406
+    }
+  },
+  {
+    "hotel_name": "The Royal Compass",
+    "city": "London",
+    "country": "United Kingdom",
+    "star_rating": 5.0,
+    "traveller_type": "Solo",
+    "review_text": "I recently stayed at The Royal Compass during my solo trip to London, and I had a great experience. The location couldn't be better—right in the heart of the city, making it super easy to explore all the sights. The staff really stood out; they were friendly and always ready to help, which made me feel welcome and at home.\n\nThe room itself was very comfortable and clean, perfect for unwinding after a long day of sightseeing. I also appreciated the facilities available, though they could use a little more variety. Overall, I felt it was a solid choice for a solo traveler like me, offering a nice balance of comfort and convenience without breaking the bank. I’d definitely recommend it to anyone visiting London!",
+    "metadata": {
+      "avg_overall": 8.874092009685231,
+      "avg_cleanliness": 8.707506053268766,
+      "avg_comfort": 8.848426150121051,
+      "avg_location": 9.292736077481848
+    }
+  },
+  {
+    "hotel_name": "The Savannah House",
+    "city": "Lagos",
+    "country": "Nigeria",
+    "star_rating": 5.0,
+    "traveller_type": "Business",
+    "review_text": "I recently stayed at The Savannah House during a business trip to Lagos, and I have to say, it was a really nice experience! The location is fantastic—right in the heart of the city, making it super convenient for meetings. The staff were incredibly friendly and attentive, which made me feel right at home after long days. I also appreciated the facilities; the gym was impressive and had everything I needed to keep up with my routine. The room comfort was very good, though I wished it was a tad quieter at times. Overall, I left feeling refreshed and satisfied, ready to tackle the next leg of my trip! Definitely a solid choice for any business traveler.",
+    "metadata": {
+      "avg_overall": 8.560606060606068,
+      "avg_cleanliness": 8.180303030303024,
+      "avg_comfort": 8.430808080808077,
+      "avg_location": 9.224242424242423
+    }
+  },
+  {
+    "hotel_name": "The Savannah House",
+    "city": "Lagos",
+    "country": "Nigeria",
+    "star_rating": 5.0,
+    "traveller_type": "Couple",
+    "review_text": "We just got back from an incredible getaway at The Savannah House in Lagos, and wow, what an experience! From the moment we arrived, the staff was really nice and welcoming, making us feel right at home. Our room was fantastic—super comfortable and spotless, which made it easy to relax after a day of exploring the city.\n\nThe location is impressive too, as it’s close to some amazing local attractions and restaurants. We loved being able to step out and soak in the local culture. The only thing we felt could be a bit better was the range of facilities, but honestly, it didn’t take away from our stay. Overall, we had such a great time and will definitely be recommending the Savannah House to our friends!",
+    "metadata": {
+      "avg_overall": 8.69195402298849,
+      "avg_cleanliness": 9.09999999999999,
+      "avg_comfort": 9.032902298850582,
+      "avg_location": 8.927298850574719
+    }
+  },
+  {
+    "hotel_name": "The Savannah House",
+    "city": "Lagos",
+    "country": "Nigeria",
+    "star_rating": 5.0,
+    "traveller_type": "Family",
+    "review_text": "We just returned from a fantastic family trip to The Savannah House in Lagos, and I can’t rave enough about it! The cleanliness of the hotel was impressive—everything felt spotless, which is so important when traveling with kids. My little ones loved the facilities, especially the pool; it was a perfect way to unwind after a day of exploring the city. The staff were super friendly and made us feel right at home, always ready to help with a smile. The location was also great—close enough to the action but tucked away in a peaceful spot. Overall, it was a really nice experience for our family, and we can't wait to go back!",
+    "metadata": {
+      "avg_overall": 8.788533834586456,
+      "avg_cleanliness": 9.066165413533833,
+      "avg_comfort": 8.709962406015041,
+      "avg_location": 8.635338345864664
+    }
+  },
+  {
+    "hotel_name": "The Savannah House",
+    "city": "Lagos",
+    "country": "Nigeria",
+    "star_rating": 5.0,
+    "traveller_type": "Solo",
+    "review_text": "I recently stayed at The Savannah House in Lagos during my solo trip, and I have to say, it was a wonderful experience! The location is fantastic—close to local attractions, making it easy for me to explore the city. The staff were incredibly friendly and attentive, always ready to help with a smile. The whole place felt very clean, and my room was comfortable with all the amenities I needed for a relaxing stay. Plus, I thought the value for money was impressive compared to other places I've stayed. Overall, I left feeling satisfied and would definitely recommend it to fellow travelers looking for a great spot in Lagos!",
+    "metadata": {
+      "avg_overall": 8.706352941176473,
+      "avg_cleanliness": 8.487294117647044,
+      "avg_comfort": 8.412470588235285,
+      "avg_location": 8.936941176470587
+    }
+  }
+]
