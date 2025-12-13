@@ -1,0 +1,11 @@
+# Core dependencies for Milestone 3
+openai>=1.0.0
+python-dotenv>=1.0.0
+neo4j>=5.0.0
+sentence-transformers>=2.2.0
+numpy>=1.24.0
+
+# Optional: TensorFlow/Keras (if needed for advanced ML features)
+# tensorflow>=2.20.0
+# tf-keras>=2.20.0
+
