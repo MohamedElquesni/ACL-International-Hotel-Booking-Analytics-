@@ -54,6 +54,3 @@ class IntentClassifier:
         except Exception as e:
             print(f"Error: {e}")
             return None
-
-classifier = IntentClassifier()
-print("IntentClassifier initialized")

@@ -1,6 +1,11 @@
 """Semantic Search using Vector Embeddings"""
 from typing import List, Dict, Any
+from sentence_transformers import SentenceTransformer
 from ..database.neo4j_connection import Neo4jConnection
+
+embedder_minilm = SentenceTransformer('all-MiniLM-L6-v2')
+embedder_mpnet = SentenceTransformer('all-mpnet-base-v2')
+conn_rag = Neo4jConnection()
 
 def semantic_search_minilm(query: str, top_k: int = 5, threshold: float = 0.65):
     """

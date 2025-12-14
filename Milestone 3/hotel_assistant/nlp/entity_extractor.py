@@ -4,6 +4,28 @@ import json
 from typing import Dict, Any
 from openai import OpenAI
 
+SCHEMAS = {
+    "LIST_HOTELS": {"city": None, "country": None, "star_rating": None},
+    "RECOMMEND_HOTEL": {"city": None, "country": None, "traveller_type": None,
+                        "age_group": None, "user_gender": None, "star_rating": None, "aspects": None},
+    "DESCRIBE_HOTEL": {"hotel_name": None, "aspects": None},
+    "COMPARE_HOTELS": {"hotel1": None, "hotel2": None, "traveller_type": None, "aspects": None},
+    "CHECK_VISA": {"from_country": None, "to_country": None}
+}
+
+ALLOWED_ASPECTS = ["cleanliness", "comfort", "facilities", "location", "staff", "value_for_money"]
+
+def enforce_schema(intent: str, entities: Dict[str, Any]) -> Dict[str, Any]:
+    schema = SCHEMAS.get(intent, {})
+    result = {}
+    for key in schema.keys():
+        value = entities.get(key)
+        if value is not None and value != "" and value != []:
+            result[key] = value
+        else:
+            result[key] = None
+    return result
+
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 def extract_entities(text: str, intent: str) -> Dict[str, Any]:

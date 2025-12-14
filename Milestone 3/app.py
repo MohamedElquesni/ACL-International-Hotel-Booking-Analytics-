@@ -1,79 +1,27 @@
 import streamlit as st
-import os
 from dotenv import load_dotenv
 
-# Load environment variables
 load_dotenv()
 
-# Import hotel assistant modules
 from hotel_assistant.database.neo4j_connection import Neo4jConnection
 from hotel_assistant.database.query_executor import select_and_execute_query
 from hotel_assistant.nlp.intent_classifier import IntentClassifier
 from hotel_assistant.nlp.entity_extractor import extract_entities
 from hotel_assistant.nlp.embeddings import semantic_search_mpnet
 from hotel_assistant.llm.llm_layer import llm_layer
-from hotel_assistant.config import (
-    DEFAULT_TOP_K,
-    DEFAULT_SIMILARITY_THRESHOLD,
-    AVAILABLE_MODELS,
-    INTENT_TYPES
-)
+from hotel_assistant.config import DEFAULT_TOP_K, DEFAULT_SIMILARITY_THRESHOLD, AVAILABLE_MODELS
 
-# Page configuration
-st.set_page_config(
-    page_title="Hotel Assistant",
-    page_icon="🏨",
-    layout="wide",
-    initial_sidebar_state="expanded"
-)
+st.set_page_config(page_title="Hotel Assistant", page_icon="🏨", layout="wide", initial_sidebar_state="expanded")
 
-# Custom CSS for better UI
 st.markdown("""
 <style>
-    .main-header {
-        font-size: 2.5rem;
-        font-weight: bold;
-        color: #1f77b4;
-        text-align: center;
-        margin-bottom: 1rem;
-    }
-    .sub-header {
-        font-size: 1.2rem;
-        color: #666;
-        text-align: center;
-        margin-bottom: 2rem;
-    }
-    .result-box {
-        padding: 1.5rem;
-        border-radius: 10px;
-        background-color: #f0f2f6;
-        margin: 1rem 0;
-    }
-    .context-box {
-        padding: 1rem;
-        border-left: 4px solid #1f77b4;
-        background-color: #e8f4f8;
-        margin: 1rem 0;
-        font-family: monospace;
-        font-size: 0.9rem;
-    }
-    .answer-box {
-        padding: 1.5rem;
-        border-radius: 10px;
-        background-color: #e8f5e9;
-        margin: 1rem 0;
-    }
-    .metadata-box {
-        padding: 0.8rem;
-        border-radius: 5px;
-        background-color: #fff3e0;
-        margin: 0.5rem 0;
-        font-size: 0.85rem;
-    }
+    .main-header { font-size: 2.5rem; font-weight: bold; color: #2c3e50; text-align: center; margin-bottom: 1rem; }
+    .sub-header { font-size: 1.2rem; color: #7f8c8d; text-align: center; margin-bottom: 2rem; }
+    .answer-box { padding: 1.5rem; border-radius: 8px; background-color: #f8f9fa; border-left: 4px solid #3498db; margin: 1rem 0; color: #2c3e50; font-size: 1.05rem; line-height: 1.6; }
+    .context-box { padding: 1rem; border-left: 4px solid #95a5a6; background-color: #ecf0f1; margin: 1rem 0; font-family: monospace; font-size: 0.9rem; color: #2c3e50; }
 </style>
 """, unsafe_allow_html=True)
 
-# Initialize session state
 if 'conversation_history' not in st.session_state:
     st.session_state.conversation_history = []
 if 'conn' not in st.session_state:
@@ -81,85 +29,37 @@ if 'conn' not in st.session_state:
 if 'intent_classifier' not in st.session_state:
     st.session_state.intent_classifier = None
 
-# Predefined example questions
 EXAMPLE_QUESTIONS = {
-    "LIST_HOTELS": [
-        "Show me hotels in Paris",
-        "List 5-star hotels",
-        "Find hotels in Egypt"
-    ],
-    "RECOMMEND_HOTEL": [
-        "Recommend hotels in Cairo with good cleanliness",
-        "Suggest a family-friendly hotel in Dubai",
-        "Best hotels for business travelers in Tokyo"
-    ],
-    "DESCRIBE_HOTEL": [
-        "Tell me about Nile Grandeur",
-        "Describe The Azure Tower",
-        "What are the facilities at Hilton Cairo?"
-    ],
-    "COMPARE_HOTELS": [
-        "Compare The Azure Tower and Nile Grandeur",
-        "Compare Hilton vs Marriott for families",
-        "Which is better: Hotel A or Hotel B for cleanliness?"
-    ],
-    "CHECK_VISA": [
-        "Do I need a visa for Turkey?",
-        "Visa requirements from Egypt to France",
-        "Do Americans need a visa for Japan?"
-    ]
+    "LIST_HOTELS": ["Show me hotels in Paris", "List 5-star hotels", "Find hotels in Egypt"],
+    "RECOMMEND_HOTEL": ["Recommend hotels in Cairo with good cleanliness", "Suggest a family-friendly hotel in Dubai"],
+    "DESCRIBE_HOTEL": ["Tell me about Nile Grandeur", "Describe The Azure Tower"],
+    "COMPARE_HOTELS": ["Compare The Azure Tower and Nile Grandeur", "Compare Hilton vs Marriott for families"],
+    "CHECK_VISA": ["Do I need a visa for Turkey?", "Visa requirements from Egypt to France"]
 }
 
 def initialize_connections():
-    """Initialize database and classifier connections"""
     if st.session_state.conn is None:
         try:
             st.session_state.conn = Neo4jConnection()
             st.session_state.intent_classifier = IntentClassifier()
             return True
         except Exception as e:
-            st.error(f"Failed to initialize connections: {str(e)}")
+            st.error(f"Connection failed: {str(e)}")
             return False
     return True
 
 def process_query(user_query, use_rag=True, model="gpt-4o-mini"):
-    """Process user query through the RAG pipeline"""
     try:
-        # Step 1: Classify intent
-        with st.spinner("Classifying intent..."):
+        with st.spinner("Processing..."):
             intent = st.session_state.intent_classifier.classify(user_query)
-
-        # Step 2: Extract entities
-        with st.spinner("Extracting entities..."):
             entities = extract_entities(user_query, intent)
+            cypher_results = select_and_execute_query(st.session_state.conn, intent, entities)
 
-        # Step 3: Execute Cypher query (KG)
-        with st.spinner("Querying knowledge graph..."):
-            cypher_results = select_and_execute_query(
-                st.session_state.conn,
-                intent,
-                entities
-            )
+            embedding_results = []
+            if use_rag:
+                embedding_results = semantic_search_mpnet(user_query, top_k=DEFAULT_TOP_K, threshold=DEFAULT_SIMILARITY_THRESHOLD)
 
-        # Step 4: Semantic search (RAG) - optional
-        embedding_results = []
-        if use_rag:
-            with st.spinner("Performing semantic search..."):
-                embedding_results = semantic_search_mpnet(
-                    user_query,
-                    top_k=DEFAULT_TOP_K,
-                    threshold=DEFAULT_SIMILARITY_THRESHOLD
-                )
-
-        # Step 5: Generate LLM response
-        with st.spinner("Generating response..."):
-            llm_result = llm_layer(
-                user_query=user_query,
-                intent=intent,
-                cypher_output=cypher_results,
-                embedding_output=embedding_results if use_rag else None,
-                model=model
-            )
+            llm_result = llm_layer(user_query, intent, cypher_results, embedding_results if use_rag else None, model=model)
 
         return {
             'success': True,
@@ -169,140 +69,90 @@ def process_query(user_query, use_rag=True, model="gpt-4o-mini"):
             'embedding_results': embedding_results,
             'llm_response': llm_result
         }
-
     except Exception as e:
-        return {
-            'success': False,
-            'error': str(e)
-        }
+        return {'success': False, 'error': str(e)}
 
 def display_results(result):
-    """Display query results in a structured format"""
     if not result['success']:
         st.error(f"Error: {result['error']}")
         return
 
-    # Create columns for layout
-    col1, col2 = st.columns([1, 1])
+    st.markdown("### 🤖 Assistant Response")
+    llm_data = result['llm_response']
 
-    with col1:
-        # Intent and Entities
-        st.markdown("### 📊 Query Analysis")
-        st.markdown(f"**Intent:** `{result['intent']}`")
-        st.markdown(f"**Entities:** `{result['entities']}`")
+    if llm_data['success']:
+        st.markdown(f'<div class="answer-box">{llm_data["response"]}</div>', unsafe_allow_html=True)
+    else:
+        st.error(f"LLM Error: {llm_data.get('error', 'Unknown')}")
 
-        # KG Results (Context)
-        st.markdown("### 🗄️ Knowledge Graph Results")
-        if result['cypher_results']:
-            st.markdown(f"**{len(result['cypher_results'])} results** from Cypher query:")
-            with st.expander("View KG Context", expanded=False):
-                st.json(result['cypher_results'])
-        else:
-            st.info("No results from knowledge graph")
+    st.markdown("---")
 
-        # RAG Results
-        if result['embedding_results']:
-            st.markdown("### 🔍 Semantic Search Results")
-            st.markdown(f"**{len(result['embedding_results'])} reviews** found:")
-            with st.expander("View RAG Context", expanded=False):
-                for i, review in enumerate(result['embedding_results'][:3], 1):
-                    st.markdown(f"**{i}. {review.get('hotel_name', 'N/A')}** (Score: {review.get('score', 0):.2f})")
-                    st.caption(f"{review.get('review_text', '')[:200]}...")
-                    st.markdown("---")
+    with st.expander("📊 Query Details", expanded=False):
+        col1, col2, col3 = st.columns(3)
 
-    with col2:
-        # LLM Response
-        st.markdown("### 🤖 Assistant Response")
-        llm_data = result['llm_response']
+        with col1:
+            st.markdown("**Intent**")
+            st.code(result['intent'])
+            st.markdown("**Entities**")
+            st.json(result['entities'])
 
-        if llm_data['success']:
-            # Display the answer
-            st.markdown(f"""
-            <div class="answer-box">
-            {llm_data['response']}
-            </div>
-            """, unsafe_allow_html=True)
+        with col2:
+            st.markdown("**Knowledge Graph Results**")
+            if result['cypher_results']:
+                st.info(f"{len(result['cypher_results'])} results")
+                with st.expander("View KG Data"):
+                    st.json(result['cypher_results'])
+            else:
+                st.warning("No KG results")
 
-            # Metadata
-            with st.expander("Response Metadata"):
-                metadata = llm_data['metadata']
-                st.markdown(f"""
-                - **Model:** {metadata.get('model', 'N/A')}
-                - **Tokens Used:** {metadata.get('tokens_used', 0)}
-                - **KG Results:** {metadata.get('cypher_count', 0)}
-                - **Embedding Results:** {metadata.get('embedding_count', 0)}
-                """)
-        else:
-            st.error(f"LLM Error: {llm_data.get('error', 'Unknown error')}")
+        with col3:
+            st.markdown("**Semantic Search Results**")
+            if result['embedding_results']:
+                st.info(f"{len(result['embedding_results'])} reviews")
+                with st.expander("View RAG Data"):
+                    for i, review in enumerate(result['embedding_results'][:3], 1):
+                        st.markdown(f"**{i}. {review.get('hotel_name', 'N/A')}** (Score: {review.get('score', 0):.2f})")
+                        st.caption(f"{review.get('review_text', '')[:200]}...")
+                        if i < 3:
+                            st.markdown("---")
+            else:
+                st.warning("No RAG results")
+
+        metadata = llm_data.get('metadata', {})
+        st.markdown("---")
+        st.caption(f"Model: {metadata.get('model', 'N/A')} | Tokens: {metadata.get('tokens_used', 0)} | KG: {metadata.get('cypher_count', 0)} | RAG: {metadata.get('embedding_count', 0)}")
 
 def main():
-    """Main Streamlit application"""
-
-    # Header
     st.markdown('<div class="main-header">🏨 Hotel Assistant</div>', unsafe_allow_html=True)
-    st.markdown('<div class="sub-header">AI-Powered Hotel Recommendation System with Knowledge Graph & RAG</div>', unsafe_allow_html=True)
+    st.markdown('<div class="sub-header">AI-Powered Hotel Recommendation System</div>', unsafe_allow_html=True)
 
-    # Sidebar
     with st.sidebar:
         st.markdown("## ⚙️ Settings")
-
-        # Model selection
-        selected_model = st.selectbox(
-            "LLM Model",
-            AVAILABLE_MODELS,
-            index=0,
-            help="Select the OpenAI model for response generation"
-        )
-
-        # RAG toggle
-        use_rag = st.checkbox(
-            "Enable RAG (Semantic Search)",
-            value=True,
-            help="Include review embeddings in context"
-        )
-
+        selected_model = st.selectbox("LLM Model", AVAILABLE_MODELS, index=0)
+        use_rag = st.checkbox("Enable RAG", value=True)
         st.markdown("---")
 
-        # Example questions
         st.markdown("## 💡 Example Questions")
-        selected_intent = st.selectbox("Select Task Type", list(EXAMPLE_QUESTIONS.keys()))
-
-        example_question = st.radio(
-            "Quick Questions:",
-            EXAMPLE_QUESTIONS[selected_intent],
-            key="example_selector"
-        )
+        selected_intent = st.selectbox("Task Type", list(EXAMPLE_QUESTIONS.keys()))
+        example_question = st.radio("Quick Questions:", EXAMPLE_QUESTIONS[selected_intent])
 
         if st.button("Use This Question", use_container_width=True):
             st.session_state.selected_question = example_question
 
         st.markdown("---")
-
-        # System status
-        st.markdown("## 📡 System Status")
+        st.markdown("## 📡 Status")
         if st.session_state.conn:
-            st.success("✓ Connected to Neo4j")
-            st.success("✓ Intent Classifier Ready")
+            st.success("✓ Connected")
         else:
             st.warning("⚠ Not connected")
 
-    # Initialize connections
     if not initialize_connections():
         st.stop()
 
-    # Main query input
     st.markdown("## 🔎 Ask Your Question")
-
-    # Use selected question or let user type
     default_query = st.session_state.get('selected_question', '')
-    user_query = st.text_input(
-        "Enter your question or select from examples:",
-        value=default_query,
-        placeholder="e.g., Recommend hotels in Cairo with good cleanliness",
-        key="user_query_input"
-    )
+    user_query = st.text_input("Enter your question:", value=default_query, placeholder="e.g., Recommend hotels in Cairo")
 
-    # Submit button
     col1, col2, col3 = st.columns([1, 1, 4])
     with col1:
         submit_button = st.button("🚀 Submit", use_container_width=True, type="primary")
@@ -313,27 +163,15 @@ def main():
         st.session_state.selected_question = ""
         st.rerun()
 
-    # Process query
     if submit_button and user_query:
         st.markdown("---")
-
-        # Process and display results
         result = process_query(user_query, use_rag=use_rag, model=selected_model)
-
-        # Save to history
-        st.session_state.conversation_history.append({
-            'query': user_query,
-            'result': result
-        })
-
-        # Display results
+        st.session_state.conversation_history.append({'query': user_query, 'result': result})
         display_results(result)
-
         st.markdown("---")
 
-    # Conversation history
     if st.session_state.conversation_history:
-        with st.expander(f"📜 Conversation History ({len(st.session_state.conversation_history)} queries)"):
+        with st.expander(f"📜 History ({len(st.session_state.conversation_history)} queries)"):
             for i, conv in enumerate(reversed(st.session_state.conversation_history), 1):
                 st.markdown(f"**Q{i}:** {conv['query']}")
                 if conv['result']['success']:

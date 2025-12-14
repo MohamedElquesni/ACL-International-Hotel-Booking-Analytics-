@@ -1,0 +1,84 @@
+1. LIST_HOTELS (5 templates)
+Basic Queries:
+"Show me hotels in Paris"
+"List hotels in Egypt"
+"Find hotels in Dubai"
+"What hotels are in Cairo?"
+With Star Rating:
+"Show me 5-star hotels"
+"List 3-star hotels"
+"Find all 4-star hotels"
+City + Rating:
+"Show me 5-star hotels in Paris"
+"List 4-star hotels in Cairo"
+"Find 3-star hotels in Dubai"
+Country + Rating:
+"Show me 5-star hotels in France"
+"List 4-star hotels in Egypt"
+"Find 3-star hotels in UAE"
+Country Only:
+"List hotels in France"
+"Show hotels in Turkey"
+"Find hotels in United Arab Emirates"
+2. RECOMMEND_HOTEL (5 templates)
+Location Only:
+"Recommend hotels in Cairo"
+"Suggest hotels in Paris"
+"Best hotels in Dubai"
+Location + Traveller Type:
+"Recommend hotels in Cairo for families"
+"Suggest hotels in Paris for couples"
+"Best hotels in Dubai for solo travelers"
+"Hotels in London for business travelers"
+Location + Aspects:
+"Recommend hotels in Cairo with good cleanliness"
+"Suggest hotels in Paris with great location"
+"Hotels in Dubai with excellent staff"
+"Find hotels in Cairo with good facilities and comfort"
+Location + Traveller + Aspects:
+"Recommend hotels in Cairo for families with good cleanliness"
+"Suggest hotels in Paris for couples with great location and comfort"
+"Hotels in Dubai for business with excellent facilities"
+"Family hotels in Cairo with good staff and value for money"
+With Demographics:
+"Recommend hotels in Cairo for families with children"
+"Suggest hotels in Paris for female travelers"
+"Hotels in Dubai for male business travelers"
+With Star Rating:
+"Recommend 5-star hotels in Cairo"
+"Suggest 4-star hotels in Paris for families"
+"Best 3-star hotels in Dubai with good location"
+3. DESCRIBE_HOTEL (2 templates)
+All Aspects:
+"Tell me about Nile Grandeur"
+"Describe The Azure Tower"
+"What can you tell me about Hilton Cairo"
+"Give me details about Marriott Paris"
+Specific Aspects:
+"Tell me about Nile Grandeur's cleanliness"
+"Describe The Azure Tower's location and facilities"
+"How is the staff at Hilton Cairo?"
+"What's the value for money at Marriott Paris?"
+"Tell me about comfort and facilities at The Azure Tower"
+4. COMPARE_HOTELS (2 templates)
+Basic Comparison:
+"Compare The Azure Tower and Nile Grandeur"
+"Compare Hilton Cairo vs Marriott Cairo"
+"What's the difference between Sofitel Paris and Ritz Paris?"
+With Aspects:
+"Compare The Azure Tower and Nile Grandeur on cleanliness"
+"Compare Hilton vs Marriott on location and facilities"
+"Compare Sofitel and Ritz on staff and comfort"
+With Traveller Type:
+"Compare The Azure Tower and Nile Grandeur for families"
+"Compare Hilton vs Marriott for business travelers"
+"Which is better for couples: Sofitel or Ritz?"
+With Traveller + Aspects:
+"Compare The Azure Tower and Nile Grandeur for families on cleanliness"
+"Compare Hilton vs Marriott for business on facilities and location"
+5. CHECK_VISA (1 template)
+"Do I need a visa to travel from Egypt to France?"
+"Visa requirements from USA to Turkey"
+"Do I need a visa for Dubai from Egypt?"
+"Check visa from France to Egypt"
+"Visa requirements from UK to UAE"
