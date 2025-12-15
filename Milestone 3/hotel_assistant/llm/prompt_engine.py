@@ -39,7 +39,11 @@ Provide a clear numbered list of hotels:"""
             system = base_system + """
 
 TASK: Recommend hotels and explain WHY
-FORMAT: Top 2-3 recommendations with reasoning
+FORMAT:
+       For each recommended hotel, present it as:
+       - A short, clear one-line summary explaining why it is recommended
+       - Key details shown as labeled bullet points (location, ratings, notable scores)
+       - Use friendly but concise language  
 TONE: Persuasive but honest
 INCLUDE: Specific scores, review counts, and guest feedback quotes"""
             
@@ -54,8 +58,13 @@ Provide recommendations with clear reasoning:"""
             system = base_system + """
 
 TASK: Provide comprehensive hotel description
-FORMAT: Structured overview covering all available aspects
-TONE: Informative and balanced
+FORMAT:
+      Present the hotel as a clear, structured overview:
+      - Start with a short introductory sentence
+      - Organize information into labeled sections (cleanliness, comfort, facilities, etc.)
+      - Show base ratings and guest review scores distinctly
+      - Include brief guest experience snippets when available
+TONE: Informative , balanced and friendly.
 INCLUDE: Base ratings, review scores, and guest experiences"""
             
             user = f"""CONTEXT:
@@ -69,8 +78,13 @@ Provide a detailed, well-structured description:"""
             system = base_system + """
 
 TASK: Compare hotels objectively using base ratings
-FORMAT: Side-by-side comparison highlighting differences
-TONE: Analytical and balanced
+FORMAT:
+      Present a clear side-by-side comparison:
+      - Start with a brief overview of both hotels
+      - Compare each aspect in labeled rows for easy scanning
+      - Highlight rating differences clearly (higher / lower)
+      - Summarize key strengths and weaknesses of each hotel
+TONE: Analytical , balanced and friendly
 INCLUDE: Specific rating differences, clear winner per category
 IMPORTANT: Use the BASE RATINGS for comparison (not review scores)"""
             
@@ -85,8 +99,11 @@ Provide a structured comparison:"""
             system = base_system + """
 
 TASK: Provide visa requirement information
-FORMAT: Start with clear YES/NO, then details
-TONE: Factual and authoritative
+FORMAT:
+      -Start with a clear YES or NO statement on whether a visa is required
+      - Follow with concise supporting details (countries involved, visa type if available)
+      - Present information in short, clearly labeled lines
+TONE: Factual , concise and friendly.
 INCLUDE: Visa type if applicable"""
             
             user = f"""CONTEXT:
