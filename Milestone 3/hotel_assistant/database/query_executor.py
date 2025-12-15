@@ -3,38 +3,6 @@ from typing import Dict, Any, List
 from .neo4j_connection import Neo4jConnection
 from .query_library import QueryLibrary
 
-class Neo4jConnection:
-    def __init__(self, config_path=None):
-        if config_path is None:
-            possible_paths = [
-                os.path.join('KnowledgeGraph', 'config.txt'),
-                os.path.join('Milestone 3', 'KnowledgeGraph', 'config.txt'),
-            ]
-            config_path = None
-            for path in possible_paths:
-                if os.path.exists(path):
-                    config_path = path
-                    break
-        
-        config = {}
-        with open(config_path, 'r') as f:
-            for line in f:
-                if '=' in line:
-                    key, value = line.strip().split('=', 1)
-                    config[key] = value
-        
-        self.driver = GraphDatabase.driver(config['URI'], auth=(config['USERNAME'], config['PASSWORD']))
-    
-    def execute_query(self, query, parameters=None):
-        with self.driver.session() as session:
-            result = session.run(query, parameters or {})
-            return [dict(record) for record in result]
-    
-    def close(self):
-        self.driver.close()
-
-print("Neo4jConnection class defined")
-
 def select_and_execute_query(conn: Neo4jConnection, intent: str, entities: Dict[str, Any]):
     if intent == "LIST_HOTELS":
         city, country, star_rating = entities.get('city'), entities.get('country'), entities.get('star_rating')
@@ -87,7 +55,5 @@ def select_and_execute_query(conn: Neo4jConnection, intent: str, entities: Dict[
         from_country, to_country = entities.get('from_country'), entities.get('to_country')
         if from_country and to_country:
             return QueryLibrary.template_V1_check_visa_requirement(conn, from_country, to_country)
-    
-    return []
 
-print("Query selector defined")
+    return []

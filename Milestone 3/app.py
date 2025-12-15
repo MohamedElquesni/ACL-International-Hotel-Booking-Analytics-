@@ -3,13 +3,34 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-from hotel_assistant.database.neo4j_connection import Neo4jConnection
-from hotel_assistant.database.query_executor import select_and_execute_query
-from hotel_assistant.nlp.intent_classifier import IntentClassifier
-from hotel_assistant.nlp.entity_extractor import extract_entities
-from hotel_assistant.nlp.embeddings import semantic_search_mpnet
-from hotel_assistant.llm.llm_layer import llm_layer
+# Import only what's needed at startup
 from hotel_assistant.config import DEFAULT_TOP_K, DEFAULT_SIMILARITY_THRESHOLD, AVAILABLE_MODELS
+
+# Cached resource loaders
+@st.cache_resource
+def get_neo4j_connection():
+    from hotel_assistant.database.neo4j_connection import Neo4jConnection
+    return Neo4jConnection()
+
+@st.cache_resource
+def get_intent_classifier():
+    from hotel_assistant.nlp.intent_classifier import IntentClassifier
+    return IntentClassifier()
+
+@st.cache_resource
+def get_heavy_modules():
+    """Load and cache heavy modules (embeddings, etc.)"""
+    from hotel_assistant.database.query_executor import select_and_execute_query
+    from hotel_assistant.nlp.entity_extractor import extract_entities
+    from hotel_assistant.nlp.embeddings import semantic_search_mpnet
+    from hotel_assistant.llm.llm_layer import llm_layer
+
+    return {
+        'select_and_execute_query': select_and_execute_query,
+        'extract_entities': extract_entities,
+        'semantic_search_mpnet': semantic_search_mpnet,
+        'llm_layer': llm_layer
+    }
 
 st.set_page_config(page_title="Hotel Assistant", page_icon="🏨", layout="wide", initial_sidebar_state="expanded")
 
@@ -40,8 +61,8 @@ EXAMPLE_QUESTIONS = {
 def initialize_connections():
     if st.session_state.conn is None:
         try:
-            st.session_state.conn = Neo4jConnection()
-            st.session_state.intent_classifier = IntentClassifier()
+            st.session_state.conn = get_neo4j_connection()
+            st.session_state.intent_classifier = get_intent_classifier()
             return True
         except Exception as e:
             st.error(f"Connection failed: {str(e)}")
@@ -50,7 +71,21 @@ def initialize_connections():
 
 def process_query(user_query, use_rag=True, model="gpt-4o-mini"):
     try:
-        with st.spinner("Processing..."):
+        # Load heavy modules (cached after first load)
+        # Show special message on first load
+        if 'models_loaded' not in st.session_state:
+            with st.spinner("🔄 Loading AI models (one-time setup, ~30 seconds)..."):
+                modules = get_heavy_modules()
+                st.session_state.models_loaded = True
+        else:
+            modules = get_heavy_modules()
+
+        select_and_execute_query = modules['select_and_execute_query']
+        extract_entities = modules['extract_entities']
+        semantic_search_mpnet = modules['semantic_search_mpnet']
+        llm_layer = modules['llm_layer']
+
+        with st.spinner("🔍 Processing your query..."):
             intent = st.session_state.intent_classifier.classify(user_query)
             entities = extract_entities(user_query, intent)
             cypher_results = select_and_execute_query(st.session_state.conn, intent, entities)
@@ -77,7 +112,7 @@ def display_results(result):
         st.error(f"Error: {result['error']}")
         return
 
-    st.markdown("### 🤖 Assistant Response")
+    st.markdown("### Assistant Response")
     llm_data = result['llm_response']
 
     if llm_data['success']:
@@ -87,7 +122,7 @@ def display_results(result):
 
     st.markdown("---")
 
-    with st.expander("📊 Query Details", expanded=False):
+    with st.expander("Query Details", expanded=False):
         col1, col2, col3 = st.columns(3)
 
         with col1:
@@ -127,37 +162,36 @@ def main():
     st.markdown('<div class="sub-header">AI-Powered Hotel Recommendation System</div>', unsafe_allow_html=True)
 
     with st.sidebar:
-        st.markdown("## ⚙️ Settings")
+        st.markdown("## Settings")
         selected_model = st.selectbox("LLM Model", AVAILABLE_MODELS, index=0)
         use_rag = st.checkbox("Enable RAG", value=True)
         st.markdown("---")
 
-        st.markdown("## 💡 Example Questions")
-        selected_intent = st.selectbox("Task Type", list(EXAMPLE_QUESTIONS.keys()))
-        example_question = st.radio("Quick Questions:", EXAMPLE_QUESTIONS[selected_intent])
+        st.markdown("## Example Questions")
+        all_examples = sum(EXAMPLE_QUESTIONS.values(), [])
+        example_question = st.selectbox("Select an example", all_examples, label_visibility="collapsed")
 
         if st.button("Use This Question", use_container_width=True):
             st.session_state.selected_question = example_question
 
         st.markdown("---")
-        st.markdown("## 📡 Status")
+        st.markdown("## Status")
         if st.session_state.conn:
-            st.success("✓ Connected")
+            st.success("Connected")
         else:
-            st.warning("⚠ Not connected")
+            st.warning("Not connected")
 
     if not initialize_connections():
         st.stop()
 
-    st.markdown("## 🔎 Ask Your Question")
     default_query = st.session_state.get('selected_question', '')
     user_query = st.text_input("Enter your question:", value=default_query, placeholder="e.g., Recommend hotels in Cairo")
 
-    col1, col2, col3 = st.columns([1, 1, 4])
-    with col1:
-        submit_button = st.button("🚀 Submit", use_container_width=True, type="primary")
-    with col2:
-        clear_button = st.button("🗑️ Clear", use_container_width=True)
+    left, center1, center2, right = st.columns([3, 1, 1, 3])
+    with center1:
+        submit_button = st.button("Submit", use_container_width=True, type="primary")
+    with center2:
+        clear_button = st.button("Clear", use_container_width=True)
 
     if clear_button:
         st.session_state.selected_question = ""
@@ -171,7 +205,7 @@ def main():
         st.markdown("---")
 
     if st.session_state.conversation_history:
-        with st.expander(f"📜 History ({len(st.session_state.conversation_history)} queries)"):
+        with st.expander(f"History ({len(st.session_state.conversation_history)} queries)"):
             for i, conv in enumerate(reversed(st.session_state.conversation_history), 1):
                 st.markdown(f"**Q{i}:** {conv['query']}")
                 if conv['result']['success']:

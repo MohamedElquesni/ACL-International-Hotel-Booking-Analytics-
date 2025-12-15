@@ -71,5 +71,3 @@ def extract_entities(text: str, intent: str) -> Dict[str, Any]:
     except Exception as e:
         print(f"Error: {e}")
         return dict(SCHEMAS[intent])
-
-print("Entity extraction function defined")

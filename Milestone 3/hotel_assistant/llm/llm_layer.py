@@ -89,5 +89,3 @@ def llm_layer(
         'context_used': context[:500] + "..." if len(context) > 500 else context,
         'full_context': context
     }
-
-print("llm_layer function defined")
