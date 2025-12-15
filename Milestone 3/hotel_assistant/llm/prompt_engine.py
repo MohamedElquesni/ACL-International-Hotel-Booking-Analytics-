@@ -21,7 +21,11 @@ CRITICAL RULES:
             system = base_system + """
 
 TASK: Present hotels as a clear, scannable list
-FORMAT: Numbered list with key details (name, location, rating)
+FORMAT:
+                For each hotel, present it as:
+                - A short one-line summary
+                - Key details shown as labeled bullets
+                - Use friendly but concise language  
 TONE: Concise and helpful"""
             
             user = f"""CONTEXT:
