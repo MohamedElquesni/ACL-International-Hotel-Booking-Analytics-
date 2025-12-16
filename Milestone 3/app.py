@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Import only what's needed at startup
-from hotel_assistant.config import DEFAULT_TOP_K, DEFAULT_SIMILARITY_THRESHOLD, AVAILABLE_MODELS
+from hotel_assistant.config import DEFAULT_TOP_K, DEFAULT_SIMILARITY_THRESHOLD, AVAILABLE_MODELS, AVAILABLE_EMBEDDING_MODELS
 
 # Cached resource loaders
 @st.cache_resource
@@ -22,13 +22,14 @@ def get_heavy_modules():
     """Load and cache heavy modules (embeddings, etc.)"""
     from hotel_assistant.database.query_executor import select_and_execute_query
     from hotel_assistant.nlp.entity_extractor import extract_entities
-    from hotel_assistant.nlp.embeddings import semantic_search_mpnet
+    from hotel_assistant.nlp.embeddings import semantic_search_mpnet, semantic_search_minilm
     from hotel_assistant.llm.llm_layer import llm_layer
 
     return {
         'select_and_execute_query': select_and_execute_query,
         'extract_entities': extract_entities,
         'semantic_search_mpnet': semantic_search_mpnet,
+        'semantic_search_minilm': semantic_search_minilm,
         'llm_layer': llm_layer
     }
 
@@ -59,18 +60,24 @@ EXAMPLE_QUESTIONS = {
 }
 
 def initialize_connections():
-    if st.session_state.conn is None:
+    if st.session_state.conn is None or st.session_state.intent_classifier is None:
         try:
             st.session_state.conn = get_neo4j_connection()
             st.session_state.intent_classifier = get_intent_classifier()
             return True
         except Exception as e:
             st.error(f"Connection failed: {str(e)}")
+            st.session_state.conn = None
+            st.session_state.intent_classifier = None
             return False
     return True
 
-def process_query(user_query, use_rag=True, model="gpt-4o-mini"):
+def process_query(user_query, use_rag=True, model="gpt-4o-mini", embedding_model="mpnet"):
     try:
+        # Ensure intent classifier is initialized
+        if st.session_state.intent_classifier is None:
+            return {'success': False, 'error': 'Intent classifier not initialized. Please refresh the page.'}
+
         # Load heavy modules (cached after first load)
         # Show special message on first load
         if 'models_loaded' not in st.session_state:
@@ -82,7 +89,6 @@ def process_query(user_query, use_rag=True, model="gpt-4o-mini"):
 
         select_and_execute_query = modules['select_and_execute_query']
         extract_entities = modules['extract_entities']
-        semantic_search_mpnet = modules['semantic_search_mpnet']
         llm_layer = modules['llm_layer']
 
         with st.spinner("🔍 Processing your query..."):
@@ -92,7 +98,13 @@ def process_query(user_query, use_rag=True, model="gpt-4o-mini"):
 
             embedding_results = []
             if use_rag:
-                embedding_results = semantic_search_mpnet(user_query, top_k=DEFAULT_TOP_K, threshold=DEFAULT_SIMILARITY_THRESHOLD)
+                # Select the appropriate embedding search function based on model choice
+                if embedding_model == "minilm":
+                    semantic_search = modules['semantic_search_minilm']
+                else:
+                    semantic_search = modules['semantic_search_mpnet']
+
+                embedding_results = semantic_search(user_query, top_k=DEFAULT_TOP_K, threshold=DEFAULT_SIMILARITY_THRESHOLD)
 
             llm_result = llm_layer(user_query, intent, cypher_results, embedding_results if use_rag else None, model=model)
 
@@ -165,6 +177,18 @@ def main():
         st.markdown("## Settings")
         selected_model = st.selectbox("LLM Model", AVAILABLE_MODELS, index=0)
         use_rag = st.checkbox("Enable RAG", value=True)
+
+        # Embedding model selector (only shown when RAG is enabled)
+        if use_rag:
+            embedding_model_display = st.selectbox(
+                "Embedding Model",
+                list(AVAILABLE_EMBEDDING_MODELS.keys()),
+                index=1  # Default to MPNet
+            )
+            embedding_model = AVAILABLE_EMBEDDING_MODELS[embedding_model_display]
+        else:
+            embedding_model = "mpnet"  # Default value when RAG is disabled
+
         st.markdown("---")
 
         st.markdown("## Example Questions")
@@ -199,7 +223,7 @@ def main():
 
     if submit_button and user_query:
         st.markdown("---")
-        result = process_query(user_query, use_rag=use_rag, model=selected_model)
+        result = process_query(user_query, use_rag=use_rag, model=selected_model, embedding_model=embedding_model)
         st.session_state.conversation_history.append({'query': user_query, 'result': result})
         display_results(result)
         st.markdown("---")

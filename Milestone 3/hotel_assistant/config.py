@@ -20,6 +20,12 @@ ENTITY_EXTRACTION_MODEL = "gpt-4o-mini"
 EMBEDDING_MODEL_MINILM = "all-MiniLM-L6-v2"
 EMBEDDING_MODEL_MPNET = "all-mpnet-base-v2"
 
+# Available Embedding Models for UI Selection
+AVAILABLE_EMBEDDING_MODELS = {
+    "MiniLM (Faster)": "minilm",
+    "MPNet (More Accurate)": "mpnet"
+}
+
 # Search Settings
 DEFAULT_TOP_K = 5
 DEFAULT_SIMILARITY_THRESHOLD = 0.65
