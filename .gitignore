@@ -54,3 +54,14 @@ Thumbs.db
 # Environment
 .env
 .venv
+
+# Sensitive Configuration Files (API keys, credentials)
+**/config.txt
+Milestone 3/.env
+Milestone 3/KnowledgeGraph/config.txt
+Milestone 2/config.txt
+
+# API Keys and Secrets
+*.key
+*.pem
+credentials.json
